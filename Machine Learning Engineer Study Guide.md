@@ -8,5 +8,7 @@
 * [The Secret Sauce Behind NoSQL: LSM Tree]('Secret Sauce Behind NoSQL LSM Tree.md')
 
 ## Blog Posts
-* [Writing Robust Tests For Data & Machine Learning Pipelines]
+* [Writing Robust Tests For Data & Machine Learning Pipelines]()
 
+## Papers
+* [Understanding Data Storage And Ingetion For Large-Scale Deep Recommendation Model Training]()
