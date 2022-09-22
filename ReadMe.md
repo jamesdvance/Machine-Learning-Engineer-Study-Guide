@@ -2,21 +2,37 @@
 ### By Topic
 
 # Architecture 
-## [Feature Stores](Feature-Stores/ReadMe.md)
+
+## [Distributed Training](Distributed-Training/ReadMe.md)
 
 ## Deployment Hardware
 
-## Testing
+## [Feature Stores](Feature-Stores/ReadMe.md)
+
+## Key-Value Stores
 
 ## Stream Processing
 
 ## Recommender Systems Architecture
 
-## Key-Value Stores
-
 ## ML Pipelines
+
+## Testing
 
 # Modeling
 
-## [Ensembling](Ensembling-ReadMe.md)
+## [Ensembling](Ensembling/ReadMe.md)
 
+## Recommendation System Models
+
+# Career
+
+## Code Reviews
+
+## [Design Documents](Design-Documents/ReadMe.md)
+
+## Innovating As Employee
+
+## System-Context Diagram
+
+## DataFlow Diagram
