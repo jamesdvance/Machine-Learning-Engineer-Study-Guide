@@ -3,7 +3,7 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 
 ## Programming
 | Section | Sources | Code Examples |
-| :---- |
+| :---- | :---- | :---- |
 | Object Oriented Programming | *Clean Code* <br> *Philosophy Of Software Design* | TBD |
 | Code Reviews | TBD | TBD | 
 | Object Oriented Programming In Python | Python docs | TBD
@@ -14,7 +14,7 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 
 ## MLOps
 | Section | Sources | Code Examples |
-| :---- |
+| :---- | :---- | :---- |
 | Defining MLOps | Paper | TBD | 
 | Training / Testing Skew | Blog Posts ; Google Rules of ML; | TBD | 
 | Testing ML Pipelines | Blog | TBD | 
@@ -24,25 +24,25 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 
 ## Faster ML
 | Section | Sources | Code Examples | 
-| :---- |
+| :---- | :---- | :---- |
 | Extending Python With C++ | 
 | Hardware For ML | *Designing Machine Learning Systems* | NA | 
 
 ## Scaling ML 
 | Section | Sources | Code Examples | 
-| :---- |
+| :---- | :---- | :---- |
 | Scaling RecSys | FB Recsys scaling paper | TBD | 
 
 ## Systems Architecture
 | Section | Sources | Code Examples |
-| :---- |
+| :---- | :---- | :---- |
 | Key Value Stores | ByteByteGo | TBD | 
 | Stream Ingestion | TBD | TBD | 
 | System Design Patterns | TBD | TBD | 
 
 ## ML Techniques 
 | Section | Sources | Code Examples |
-| :---- |
+| :---- | :---- | :---- |
 | Ensembling | *Designing Machine Learning Systems* | TBD | 
 | Feature Engineering | TBD | TBD |
 | Feature Selection  | TBD | TBD | 
@@ -51,7 +51,7 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 
 ## Recommender Systems
 | Section | Sources | Code Examples |
-| :---- |
+| :---- | :---- | :---- |
 | Popularity Bias | TBD | TBD | 
 
 ## Natural Language Processing
