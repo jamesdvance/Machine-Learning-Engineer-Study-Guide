@@ -16,3 +16,5 @@ Things for future outlines
 * [150 Successful Machine Learning Models: 6 Lessons Learned At Booking.com](https://dl.acm.org/doi/10.1145/3292500.3330744)
 * [Software-Hardware Co-design for Fast and Scalable Training of Deep Learning Recommendation Models](https://arxiv.org/pdf/2104.05158.pdf)
 * [RecSysOps: Best Practices For Operating A Large Scale Recommender System](https://dl.acm.org/doi/fullHtml/10.1145/3460231.3474620)
+* [Real Time Machine Learning: The Missing Pieces](https://arxiv.org/abs/1703.03924)
+

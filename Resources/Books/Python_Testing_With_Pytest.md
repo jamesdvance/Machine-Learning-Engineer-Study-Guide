@@ -174,8 +174,15 @@ the same test and have pytest report if any of the sets failed
 * `request` is a parameter into the fixture
 * `request.node` is pytest's representation of a test
 
-Chapter 7: Strategy
+## Chapter 7: Strategy
 * Python code can be imported and tested fine-grained
 * Other language code is tested like a black box
-* 
+
+### Features to Test
+
+*Recent* - new features / areas of code
+*Core* - unique parts of software, essential functions to product
+*Risk* - areas that pose more risk, such as areas crucial to customers but not frequently updated
+*Problematic* - often break
+*Expertise* - understand by subset of people
 
