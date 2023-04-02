@@ -21,6 +21,7 @@
 ## MLOps
 
 ## Faster ML
+* [] [GPU Acceleration with C++ Course](https://courses.nvidia.com/courses/course-v1:DLI+S-AC-08+V1/)
 
 ## Scaling ML 
 

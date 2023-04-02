@@ -24,17 +24,20 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 | Model Serving Performance | [] | TBD | 
 | Experiment Tracking | [] | TBD|
 | ML Project Layouts | TBD | TBD | 
+| Metaflow | [] | TBD | 
 
 ## Faster ML
 | Section | Populated | Code Examples | 
 | :---- | :---- | :---- |
 | Extending Python With C++ | [] | TBD | 
-| Hardware For ML | *Designing Machine Learning Systems* | NA | 
+| Hardware For ML | *Designing Machine Learning Systems* | NA |
+| GPU Acceleration with C++ | [] | TBD|
 
 ## Scaling ML 
 | Section | Sources | Code Examples | 
 | :---- | :---- | :---- |
 | Scaling RecSys | FB Recsys scaling paper | TBD | 
+| Kubernetes | [] | TBD| 
 
 ## Systems Architecture
 | Section | Sources | Code Examples |
@@ -70,12 +73,17 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 ## Reinforcement Learning
 | Section | Sources | Code Examples |
 | :---- | :---- | :---- |
-| Transformers | TBD | TBD | 
+| Contraint Satisfaction in RL | TBD | TBD | 
 
 ## Optimization 
 | Section | Sources | Code Examples |
 | :---- | :---- | :---- |
 | Transformers | TBD | TBD | 
+
+## Cloud
+| Section | Sources | Code Examples |
+| :---- | :---- | :---- |
+| AWS Cloud Development Toolkit (CDK) | TBD | TBD | 
 
 ### [Resources](/Resources)
 
