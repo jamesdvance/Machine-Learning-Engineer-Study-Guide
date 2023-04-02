@@ -1,6 +1,9 @@
 # Ensembling
 
-## *Designing Machine Learning Systems*, Huyen 2022. Ch 6
+## Overview
+***
+### Section Sources
+* *Designing Machine Learning Systems*, Huyen 2022. Ch 6
 ***
 
 ### Bagging

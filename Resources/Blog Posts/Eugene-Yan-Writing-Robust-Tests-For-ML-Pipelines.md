@@ -1,7 +1,5 @@
-
 # [Writing Robust Tests for Machine Learning Pipelines](https://eugeneyan.com/writing/testing-pipelines/)
 Eugene Yan, 2022
-***
 
 ## Types of Tests
 * Unit - individual methods or classes
@@ -16,8 +14,5 @@ Eugene Yan, 2022
 Additionally, ML pipelines often had additional tests on data quality model evaluation, and model behavioral checks that run in production with each new model or batch
 * Data Quality - [Great Expectations](https://greatexpectations.io/), [Deequ](https://github.com/awslabs/deequ) by AWS
 * Model Evaluation - e.g. sklearn metrics
+* Model behavioral checks - [Checklist](https://github.com/marcotcr/checklist) for NLP, [RecList](https://reclist.io/) for RecSys
 
-### Integration Tests
-Integration Tests are useful for ensuring an entire pipeline works as expected
-<br> 
-In reality this can mean stretching out tests across multiple repos and infra

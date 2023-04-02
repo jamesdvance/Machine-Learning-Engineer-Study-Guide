@@ -1,5 +1,40 @@
 # Resources Queue
-Things for future outlines
+
+## Programming
+
+### Object Oriented Programming
+[x] [Solid Principles Python](https://towardsdatascience.com/solid-coding-in-python-1281392a6a94)
+
+### Code Reviews
+[]
+
+### OOP In Python
+
+### Testing In Python
+
+### Design Documents
+
+### Programming Design Patterns
+
+### Error Handling
+
+## MLOps
+
+## Faster ML
+
+## Scaling ML 
+
+## Systems Architecture
+
+## ML Techniques 
+
+## Recommender Systems
+
+## Computer Vision
+
+## Natural Language Processing
+
+## Reinforcement Learning
 
 ## Blog Posts
 * [Python OOP](https://www.pythontutorial.net/python-oop/)

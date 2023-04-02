@@ -2,31 +2,33 @@
 After years of trying to organize my learning in notebooks, flashcards and my increasingly porous brain, this repo is an attempt to build something lasting. Pull requests welcome. 
 
 ## Programming
-| Section | Sources | Code Examples |
+| Section | Populated | Code Examples |
 | :---- | :---- | :---- |
-| Object Oriented Programming | *Clean Code* <br> *Philosophy Of Software Design* | TBD |
-| Code Reviews | TBD | TBD | 
-| Object Oriented Programming In Python | Python docs | TBD
-| Testing In Python | *Python Testing With Pytest* <br> Pytest Docs | TBD | 
-| Design Documents | Blog | TBD | 
-| Refactoring | Refactoring.com | TBD | 
-| Programming Design Patterns | TBD | TBD | 
+| [Object Oriented Programming]('Programming/Object-Oriented-Programming.md') | [] | TBD |
+| Code Reviews | [] | TBD | 
+| OOP In Python | [] | TBD
+| Testing In Python | [] | TBD | 
+| Design Documents | []| TBD | 
+| Refactoring | [] | TBD | 
+| Programming Design Patterns | [] | TBD | 
+| Error Handling | [] | TBD | 
 
 ## MLOps
-| Section | Sources | Code Examples |
+| Section | Populated | Code Examples |
 | :---- | :---- | :---- |
-| Defining MLOps | Paper | TBD | 
-| Training / Testing Skew | Blog Posts ; Google Rules of ML; | TBD | 
+| Defining MLOps | [] | TBD | 
+| ML Pipelines | [] | TBD | 
+| Training / Testing Skew | [] | TBD | 
 | Testing ML Pipelines | Blog | TBD | 
-| Feature Stores | Sagemaker Docs | TBD
-| Model Serving Performance | *Designing Machine Learning Systems* | TBD | 
-| Experiment Tracking | - [x] Designing Machine Learning Systems | TBD|
+| Feature Stores | [] | TBD
+| Model Serving Performance | [] | TBD | 
+| Experiment Tracking | [] | TBD|
 | ML Project Layouts | TBD | TBD | 
 
 ## Faster ML
-| Section | Sources | Code Examples | 
+| Section | Populated | Code Examples | 
 | :---- | :---- | :---- |
-| Extending Python With C++ | 
+| Extending Python With C++ | [] | TBD | 
 | Hardware For ML | *Designing Machine Learning Systems* | NA | 
 
 ## Scaling ML 
@@ -56,20 +58,28 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 | Popularity Bias | TBD | TBD | 
 
 ## Natural Language Processing
+| Section | Sources | Code Examples |
+| :---- | :---- | :---- |
+| Transformers | TBD | TBD | 
 
 ## Computer Vision
+| Section | Sources | Code Examples |
+| :---- | :---- | :---- |
+| Transformers | TBD | TBD | 
 
 ## Reinforcement Learning
+| Section | Sources | Code Examples |
+| :---- | :---- | :---- |
+| Transformers | TBD | TBD | 
 
 ## Optimization 
+| Section | Sources | Code Examples |
+| :---- | :---- | :---- |
+| Transformers | TBD | TBD | 
 
-### [Resources]()
+### [Resources](/Resources)
 
-#### [Future Resource List]()
+#### [Future Resource List](Resources_Queue.md)
 
-## [Distributed Training](Distributed-Training/ReadMe.md)
 
-## Deployment Hardware
-
-## [Feature Stores](Feature-Stores/ReadMe.md)
 
