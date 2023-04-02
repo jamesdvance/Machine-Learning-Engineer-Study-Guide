@@ -1,4 +1,4 @@
-# Machine Learning Study Guide
+# Machine Learning Engineer Study Guide
 After years of trying to organize my learning in notebooks, flashcards and my increasingly porous brain, this repo is an attempt to build something lasting. Pull requests welcome. 
 
 ## Programming
@@ -20,7 +20,8 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 | Testing ML Pipelines | Blog | TBD | 
 | Feature Stores | Sagemaker Docs | TBD
 | Model Serving Performance | *Designing Machine Learning Systems* | TBD | 
-| Experiment Tracking | *Designing Machine Learning Systems* | TBD|
+| Experiment Tracking | - [x] Designing Machine Learning Systems | TBD|
+| ML Project Layouts | TBD | TBD | 
 
 ## Faster ML
 | Section | Sources | Code Examples | 
@@ -37,8 +38,8 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 | Section | Sources | Code Examples |
 | :---- | :---- | :---- |
 | Key Value Stores | ByteByteGo | TBD | 
-| Stream Ingestion | TBD | TBD | 
 | System Design Patterns | TBD | TBD | 
+| Stream Ingestion | TBD | TBD | 
 
 ## ML Techniques 
 | Section | Sources | Code Examples |

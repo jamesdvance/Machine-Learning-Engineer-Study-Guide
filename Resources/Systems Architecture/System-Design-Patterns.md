@@ -1,4 +1,4 @@
-# API Gateways
+# System Design Patterns
 
 ## [API Gateway Microservice Architecture Pattern] https://microservices.io/patterns/apigateway.html
 

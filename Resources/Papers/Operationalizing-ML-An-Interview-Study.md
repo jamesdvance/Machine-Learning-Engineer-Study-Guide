@@ -1,6 +1,4 @@
-# ML Ops Tactics 
-
-## [Operationalizing Machine Learning: An Interview Study](https://arxiv.org/pdf/2209.09125.pdf)
+# [Operationalizing Machine Learning: An Interview Study](https://arxiv.org/pdf/2209.09125.pdf)
 
 ### Three Keys To Success ("Three V's")
 * Velocity - prototyping and iterating on ideas quickly is crucial

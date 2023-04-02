@@ -34,9 +34,3 @@ Making models smaller provides lower latency and lower memory and disk space nee
 * Quantization during training lets you use less memory, so can train larger models on same hardware
 * Low-precision training is supported by Tensor Cores by NVIDIA. Google TPUs also support 16-bit training
 * Fixed-point inference is a standard in industry. Some edge devices only support fixed-point inference
-
-## ML On Cloud
-* 
-
-
-## ML On Edge
