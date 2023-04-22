@@ -19,13 +19,16 @@
 ### Error Handling
 
 ## MLOps
+* [] [Reasonable Scale Machine Learning with...Metaflow](https://arxiv.org/pdf/2303.11761.pdf)
 
 ## Faster ML
 * [] [GPU Acceleration with C++ Course](https://courses.nvidia.com/courses/course-v1:DLI+S-AC-08+V1/)
+* [] [FasterTransformer](https://github.com/NVIDIA/FasterTransformer/blob/main/src/fastertransformer/kernels/activation_int8_kernels.cu)
 
 ## Scaling ML 
 
 ## Systems Architecture
+[] [ByteByteGo: 10 Key Memory and Storage Systems](https://www.youtube.com/watch?v=lX4CrbXMsNQ)
 
 ## ML Techniques 
 

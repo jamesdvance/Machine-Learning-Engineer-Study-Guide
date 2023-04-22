@@ -12,6 +12,8 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 | Refactoring | [] | TBD | 
 | Programming Design Patterns | [] | TBD | 
 | Error Handling | [] | TBD | 
+| C++ Standard Library | * []https://hackingcpp.com/cpp/std/algorithms/intro.html | TBD | 
+
 
 ## MLOps
 | Section | Populated | Code Examples |
@@ -31,7 +33,9 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 | :---- | :---- | :---- |
 | Extending Python With C++ | [] | TBD | 
 | Hardware For ML | *Designing Machine Learning Systems* | NA |
-| GPU Acceleration with C++ | [] | TBD|
+| GPU Acceleration with C++ (CUDA) | [] | TBD|
+| Pytorch AMP | TBD |TBD | 
+
 
 ## Scaling ML 
 | Section | Sources | Code Examples | 
