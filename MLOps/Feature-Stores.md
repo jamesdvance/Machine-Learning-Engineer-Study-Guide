@@ -58,6 +58,7 @@ From foundational to nice to have
 	* minimizes train-serve skew
 	* point-in-time correctness. Makes sure historical features used offline don't have data leaks
 	* point-in-time is made trickier when features update intraday
+	
 4. Convenience - easy to use, intuitive API's, interactivity
 	* Easy and quick to use, offline and online. 
 5. Autopilot - automated backfilling of alerts, feature selection
@@ -89,7 +90,7 @@ From foundational to nice to have
 * [Alibaba Basic Feature Server](https://102.alibaba.com/detail?id=183) 
 	* computes statistical features on user interactions in real time for Alibaba's real-time recsys
 
-### [Distributed Time Travel](https://netflixtechblog.com/distributed-time-travel-for-feature-generation-389cccdd3907?gi=7f62ff23602)
+### [Netflix - Distributed Time Travel](https://netflixtechblog.com/distributed-time-travel-for-feature-generation-389cccdd3907?gi=7f62ff23602)
 * Helps solve the difficulty of creating point-in-time accurate features to simulate production when offline
 	* Doing so incorrectly leads to data leaks
 * To do so, they take snapshots of offline and online data context sets
