@@ -2,39 +2,36 @@
 After years of trying to organize my learning in notebooks, flashcards and my increasingly porous brain, this repo is an attempt to build something lasting. Pull requests welcome. 
 
 ## Programming
-| Section | Populated | Code Examples |
+| Section | Sources | Code Examples |
 | :---- | :---- | :---- |
-| [Object Oriented Programming](Programming/Object-Oriented-Programming.md) | [] | TBD |
-| Code Reviews | [] | TBD | 
-| OOP In Python | [] | TBD
-| Testing In Python | [] | TBD | 
-| Design Documents | []| TBD | 
-| Refactoring | [] | TBD | 
-| Programming Design Patterns | [] | TBD | 
-| Error Handling | [] | TBD | 
-| C++ Standard Library | [*] https://hackingcpp.com/cpp/std/algorithms/intro.html | TBD | 
+| [Object Oriented Programming](Programming/Object-Oriented-Programming.md) | [x] SOLID Principals | TBD |
+| [Design Documents](Programming/Design-Documents.md) | [x] [Eugene Yan: Writing ML Design Docs](https://eugeneyan.com/writing/ml-design-docs/)| TBD | 
+
+## Python
+| Section | Sources | Code Examples |
+| :---- | :---- | :---- |
+| [OOP In Python](Python/OOP-In-Python.md) | [x] [OOP In Python (Real Python)](https://realpython.com/python3-object-oriented-programming/) | TBD | 
+| [Python Testing With PyTest](Python/Python-Testing-With-Pytest.md) | [x] Pytest Book (Brian Okken)  | TBD | 
+
+## C++
+| C++ Standard Library | [*] [Hacking CPP](https://hackingcpp.com/cpp/std/algorithms/intro.html) | TBD | 
 
 ## MLOps
-| Section | Resources | Code Examples |
+| Section | Sources | Code Examples |
 | :---- | :---- | :---- |
-| Defining MLOps | [] | TBD | 
-| ML Pipelines | [] | TBD | 
-| Training / Testing Skew | [] | TBD | 
-| Testing ML Pipelines | Blog | TBD | 
-| [Feature Stores](MLOps/Feature-Stores.md) | [x] Feathr (LinkedIn). MLOps.community podcast. 9/2/22 <br/> [x] AWS Sagemaker-Feature Store Introduction <br> [x] Eugene Yan - Feature Stores <br/> [x] Netflix - Distributed Time Travel| TBD
-| Model Serving Performance | [] | TBD | 
-| Experiment Tracking | [] | TBD|
-| ML Project Layouts | TBD | TBD | 
-| Metaflow | [] | TBD | 
+| [Defining MLOps](MLOps/Defining-MLOps.md) | [] | TBD | 
+| [Training / Testing Skew](MLOps/Training-Testing-Skew.md) |  | TBD | 
+| [Feature Stores](MLOps/Feature-Stores.md) | [x] Feathr (LinkedIn). MLOps.community podcast. 9/2/22 <br/> [x] AWS Sagemaker-Feature Store Introduction <br> [x] Eugene Yan - Feature Stores <br/> [x] Netflix - Distributed Time Travel <br/< [] [Feast Feature Store](https://docs.feast.dev/) | TBD | 
+| [Experiment Tracking](MLOps/Experiment-Tracking.md) | [] | TBD|
+| Data Version Control | [] [DVC Docs](https://dvc.org/) | TBD | 
 
 ## Faster ML
-| Section | Populated | Code Examples | 
+| Section | Sources | Code Examples | 
 | :---- | :---- | :---- |
 | Extending Python With C++ | [] | TBD | 
 | Hardware For ML | *Designing Machine Learning Systems* | NA |
 | GPU Acceleration with C++ (CUDA) | [] | TBD|
 | Pytorch AMP | TBD |TBD | 
-
 
 ## Scaling ML 
 | Section | Sources | Code Examples | 

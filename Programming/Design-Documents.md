@@ -1,6 +1,6 @@
 # Design Documents
 
-## [Blog Post: Writing ML Design Docs](https://eugeneyan.com/writing/ml-design-docs/)
+## [Eugene Yan: Writing ML Design Docs](https://eugeneyan.com/writing/ml-design-docs/)
 
 ### Elements
 
