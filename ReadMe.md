@@ -15,13 +15,13 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 | C++ Standard Library | [*] https://hackingcpp.com/cpp/std/algorithms/intro.html | TBD | 
 
 ## MLOps
-| Section | Populated | Code Examples |
+| Section | Resources | Code Examples |
 | :---- | :---- | :---- |
 | Defining MLOps | [] | TBD | 
 | ML Pipelines | [] | TBD | 
 | Training / Testing Skew | [] | TBD | 
 | Testing ML Pipelines | Blog | TBD | 
-| Feature Stores | [*] Feathr (LinkedIn). MLOps.community podcast. 9/2/22 <br/> [*] AWS Sagemaker-Feature Store Introduction <br> [*] Eugene Yan - Feature Stores <br/> [*] Netflix - Distributed Time Travel| TBD
+| [Feature Stores](MLOps/Feature-Stores.md) | [x] Feathr (LinkedIn). MLOps.community podcast. 9/2/22 <br/> [x] AWS Sagemaker-Feature Store Introduction <br> [x] Eugene Yan - Feature Stores <br/> [x] Netflix - Distributed Time Travel| TBD
 | Model Serving Performance | [] | TBD | 
 | Experiment Tracking | [] | TBD|
 | ML Project Layouts | TBD | TBD | 
