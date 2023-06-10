@@ -4,14 +4,14 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 ## Programming
 | Section | Sources | Code Examples |
 | :---- | :---- | :---- |
-| [Object Oriented Programming](Programming/Object-Oriented-Programming.md) | [x] SOLID Principals | TBD |
+| [Object Oriented Programming](Programming/Object-Oriented-Programming.md) | - [x] SOLID Principals | TBD |
 | [Design Documents](Programming/Design-Documents.md) | [x] [Eugene Yan: Writing ML Design Docs](https://eugeneyan.com/writing/ml-design-docs/)| TBD | 
 
 ## Python
 | Section | Sources | Code Examples |
 | :---- | :---- | :---- |
-| [OOP In Python](Python/OOP-In-Python.md) | [x] [OOP In Python (Real Python)](https://realpython.com/python3-object-oriented-programming/) | TBD | 
-| [Python Testing With PyTest](Python/Python-Testing-With-Pytest.md) | [x] Pytest Book (Brian Okken)  | TBD | 
+| [OOP In Python](Python/OOP-In-Python.md) | - [x] [OOP In Python (Real Python)](https://realpython.com/python3-object-oriented-programming/) | TBD | 
+| [Python Testing With PyTest](Python/Python-Testing-With-Pytest.md) | - [x] Pytest Book (Brian Okken)  | TBD | 
 
 ## C++
 | C++ Standard Library | [*] [Hacking CPP](https://hackingcpp.com/cpp/std/algorithms/intro.html) | TBD | 
@@ -21,10 +21,10 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 | :---- | :---- | :---- |
 | [Defining MLOps](MLOps/Defining-MLOps.md) | [] | TBD | 
 | [Training / Testing Skew](MLOps/Training-Testing-Skew.md) |  | TBD | 
-| [Feature Stores](MLOps/Feature-Stores.md) | [x] Feathr (LinkedIn). MLOps.community podcast. 9/2/22 <br/> [x] AWS Sagemaker-Feature Store Introduction <br> [x] Eugene Yan 
-- Feature Stores <br/> [x] Netflix - Distributed Time Travel <br/> [] [Feast Feature Store](https://docs.feast.dev/) | TBD | 
-| [Experiment Tracking](MLOps/Experiment-Tracking.md) | [] | TBD|
-| Data Version Control | [] [DVC Docs](https://dvc.org/) | TBD | 
+| [Feature Stores](MLOps/Feature-Stores.md) | - [x] Feathr (LinkedIn). MLOps.community podcast. 9/2/22 <br/> - [x] AWS Sagemaker-Feature Store Introduction <br> - [x] Eugene Yan 
+- Feature Stores <br/> - [x] Netflix - Distributed Time Travel <br/> - [] [Feast Feature Store](https://docs.feast.dev/) | TBD | 
+| [Experiment Tracking](MLOps/Experiment-Tracking.md) | - [] | TBD|
+| Data Version Control | - [] [DVC Docs](https://dvc.org/) | TBD | 
 
 ## Faster ML
 | Section | Sources | Code Examples | 
