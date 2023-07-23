@@ -21,8 +21,7 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 | :---- | :---- | :---- |
 | [Defining MLOps](MLOps/Defining-MLOps.md) | [] | TBD | 
 | [Training / Testing Skew](MLOps/Training-Testing-Skew.md) |  | TBD | 
-| [Feature Stores](MLOps/Feature-Stores.md) | - [x] Feathr (LinkedIn). MLOps.community podcast. 9/2/22 <br/> - [x] AWS Sagemaker-Feature Store Introduction <br> - [x] Eugene Yan 
-- Feature Stores <br/> - [x] Netflix - Distributed Time Travel <br/> - [] [Feast Feature Store](https://docs.feast.dev/) | TBD | 
+| [Feature Stores](MLOps/Feature-Stores.md) | - [x] Feathr (LinkedIn). MLOps.community podcast. 9/2/22 <br/> - [x] AWS Sagemaker-Feature Store Introduction <br> - [x] Eugene Yan: Feature Stores <br/> - [x] Netflix - Distributed Time Travel <br/> - [] [Feast Feature Store](https://docs.feast.dev/) | TBD | 
 | [Experiment Tracking](MLOps/Experiment-Tracking.md) | - [] | TBD|
 | Data Version Control | - [] [DVC Docs](https://dvc.org/) | TBD | 
 
