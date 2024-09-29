@@ -56,13 +56,13 @@
 * Can be called with ClassName.method_name() or object.method_name()
 
 ### @classmethod
-* Can be used to declare a factor method that returns objects of a class
+* Can be used to declare a factory method that returns objects of a class
 * Can access class attributes, but not instance attributes
 * Can be called with ClassName.method_name() or object.method_name()
 * First argument to method is `cls` not `self`
 
 ### @dataclass
-
+* Used to store data, and has methods to validate
 
 ## Build In Methods
 ### __repr__

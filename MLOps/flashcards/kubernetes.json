@@ -1,0 +1,44 @@
+{
+    "flashcards": [
+      {
+        "question": "What is a PersistentVolume (PV) in Kubernetes?",
+        "answer": "A piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes."
+      },
+      {
+        "question": "What is a PersistentVolumeClaim (PVC) in Kubernetes?",
+        "answer": "A request for storage by a user, similar to how Pods consume node resources."
+      },
+      {
+        "question": "What are the main access modes for PersistentVolumes?",
+        "answer": "ReadWriteOnce (RWO), ReadOnlyMany (ROX), ReadWriteMany (RWX), and ReadWriteOncePod (RWOP)."
+      },
+      {
+        "question": "What is the purpose of StorageClass in Kubernetes?",
+        "answer": "To enable dynamic provisioning of storage and to define different classes of storage with varying properties."
+      },
+      {
+        "question": "What are the three reclaim policies for PersistentVolumes?",
+        "answer": "Retain, Recycle (deprecated), and Delete."
+      },
+      {
+        "question": "What is the purpose of the 'selector' field in a PersistentVolumeClaim?",
+        "answer": "To filter the set of volumes that can be bound to the claim based on labels."
+      },
+      {
+        "question": "What is volume mode in PersistentVolumes and PersistentVolumeClaims?",
+        "answer": "It specifies whether the volume should be used as a formatted filesystem (Filesystem mode) or a raw block device (Block mode)."
+      },
+      {
+        "question": "What is the purpose of the 'claimRef' field in a PersistentVolume?",
+        "answer": "To bind a specific PersistentVolumeClaim to a PersistentVolume, ensuring other PVCs cannot use it."
+      },
+      {
+        "question": "What is volume snapshot in Kubernetes?",
+        "answer": "A feature that allows creating a copy of a volume at a particular point in time, supported by CSI volume plugins."
+      },
+      {
+        "question": "What is volume cloning in Kubernetes?",
+        "answer": "A feature that allows creating a new volume using an existing PVC as a data source, available for CSI volume plugins."
+      }
+    ]
+  }

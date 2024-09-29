@@ -1,0 +1,232 @@
+[
+    {
+      "front": "What is Kubeflow?",
+      "back": "Kubeflow is an open-source machine learning platform designed to deploy, scale, and manage machine learning workflows on Kubernetes."
+    },
+    {
+      "front": "What is the primary goal of Kubeflow?",
+      "back": "The primary goal of Kubeflow is to make deploying machine learning workflows on Kubernetes simple, portable, and scalable."
+    },
+    {
+      "front": "What are the main components of Kubeflow?",
+      "back": "The main components of Kubeflow include Jupyter Notebooks, TensorFlow model training, model serving, pipelines, and experiment tracking."
+    },
+    {
+      "front": "What is Kubeflow Pipelines?",
+      "back": "Kubeflow Pipelines is a platform for building and deploying portable, scalable machine learning workflows based on Docker containers."
+    },
+    {
+      "front": "What is KFServing in Kubeflow?",
+      "back": "KFServing (now called KServe) is a Kubernetes custom resource for serving machine learning models on arbitrary frameworks."
+    },
+    {
+      "front": "How does Kubeflow integrate with TensorFlow?",
+      "back": "Kubeflow provides custom resources for TensorFlow training jobs and operators to manage TensorFlow deployments on Kubernetes."
+    },
+    {
+      "front": "What is the purpose of Kubeflow Notebooks?",
+      "back": "Kubeflow Notebooks provides managed Jupyter notebooks for data scientists to develop, train, and deploy machine learning models."
+    },
+    {
+      "front": "What is Kubeflow Metadata?",
+      "back": "Kubeflow Metadata is a service for tracking artifacts, executions, and models in machine learning workflows."
+    },
+    {
+      "front": "How does Kubeflow support hyperparameter tuning?",
+      "back": "Kubeflow includes Katib, a Kubernetes-native project for automated machine learning (AutoML) and hyperparameter tuning."
+    },
+    {
+      "front": "What is the Kubeflow Dashboard?",
+      "back": "The Kubeflow Dashboard is a central UI for managing and monitoring all Kubeflow components and workflows."
+    },
+    {
+        "front": "What are advantages of using MLFlow instead of kubeflow metadata for experiment tracking?", 
+        "back": "1. Standalone usage: MLflow can be used independently of any specific platform or infrastructure. It doesn't require Kubernetes or any other specific deployment environment, making it more flexible for various development scenarios.\n2. Broader scope: MLflow is a more comprehensive platform that includes not just experiment tracking, but also model packaging, versioning, and deployment. This makes it a more all-in-one solution for the ML lifecycle.\n3. Integration with popular ML libraries: MLflow has built-in integrations with many popular machine learning libraries like scikit-learn, TensorFlow, PyTorch, and others, which can simplify the tracking process.\n4. Local experimentation: MLflow is particularly well-suited for local experimentation and development, which is often preferred in the early stages of a project.\n5. Project structure: MLflow provides a standardized way to package ML code and its dependencies, making it easier to reproduce experiments and share projects.\n6. Model registry: MLflow includes a centralized model registry for managing the full lifecycle of an MLflow Model, including model versioning, stage transitions, and annotations."
+    },
+
+    {
+        "front": "What are the two groups of types in Kubeflow Pipelines (KFP)?",
+        "back": "Parameters and artifacts"
+      },
+      {
+        "front": "What are parameters used for in KFP?",//left off copy
+        "back": "Parameters are useful for passing small amounts of data between components"
+      },
+      {
+        "front": "What are artifacts used for in KFP?",
+        "back": "Artifacts are the mechanism by which KFP provides first-class support for ML artifact outputs, such as datasets, models, metrics, etc."
+      },
+      {
+        "front": "How does KFP handle parameter serialization for Python Components?",
+        "back": "For Python Components, parameter serialization and deserialization is handled automatically by KFP"
+      },
+      {
+        "front": "What are the four main properties of artifacts in KFP?",
+        "back": "1. name: the name of the artifact\n2. uri: the location of the artifact object\n3. metadata: additional key-value pairs about the artifact\n4. path: a local path that corresponds to the artifact's uri"
+      },
+      {
+        "front": "What are the two forms of artifact authoring syntax supported by the KFP SDK?",
+        "back": "1. Traditional artifact authoring syntax\n2. Pythonic artifact authoring syntax"
+      },
+      {
+        "front": "Which artifact authoring syntax is supported for both Python Components and Container Components?",
+        "back": "The traditional artifact authoring syntax"
+      },
+      {
+        "front": "How are input artifacts specified using the traditional artifact syntax?",
+        "back": "Input artifacts are specified as: input_artifact: Input[Artifact]"
+      },
+      {
+        "front": "How are output artifacts specified using the traditional artifact syntax?",
+        "back": "Output artifacts are specified as: output_artifact: Output[Artifact]"
+      },
+      {
+        "front": "How are artifacts specified in a pipeline using the Pythonic syntax?",
+        "back": "Artifacts in pipelines are specified as: def my_pipeline(in_artifact: Artifact) -> Artifact:"
+      },
+      {
+        "front": "What function can be used to obtain a unique object storage URI for output artifacts in the Pythonic syntax?",
+        "back": "The dsl.get_uri() function"
+      },
+      {
+        "front": "What are some common artifact types provided by KFP?",
+        "back": "Artifact, Dataset, Model, Metrics, ClassificationMetrics, SlicedClassificationMetrics, HTML, and Markdown"
+      },
+      {
+        "front": "Which artifact type can be considered as the 'any' type and is compatible with all other artifact types?",
+        "back": "The Artifact type"
+      },
+      {
+        "front": "How does KFP handle lists of artifacts?",
+        "back": "KFP supports input lists of artifacts, annotated as List[Artifact] or Input[List[Artifact]]"
+      },
+      {
+        "front": "What control flow objects are useful for collecting output artifacts from a loop of tasks?",
+        "back": "dsl.ParallelFor and dsl.Collected control flow objects"
+      },
+        {
+          "front": "What are components in Kubeflow Pipelines?",
+          "back": "Components are the building blocks of KFP pipelines. They are remote function definitions that specify inputs, have user-defined logic, and can create outputs."
+        },
+        {
+          "front": "What are the two high-level ways to author components in KFP?",
+          "back": "1. Python Components (Lightweight Python Components and Containerized Python Components)\n2. Container Components"
+        },
+        {
+          "front": "What is a Lightweight Python Component?",
+          "back": "A Lightweight Python Component is created by decorating a Python function with the @dsl.component decorator. It must have type annotations and be hermetic (self-contained)."
+        },
+        {
+          "front": "What are the requirements for a Python function to be decorated with @dsl.component?",
+          "back": "1. Type annotations for inputs and outputs\n2. Hermetic (no references to symbols defined outside the function body)"
+        },
+        {
+          "front": "What is the purpose of the 'packages_to_install' argument in the @dsl.component decorator?",
+          "back": "It allows specifying a list of Python packages to be installed at runtime before executing the component function."
+        },
+        {
+          "front": "What is a Containerized Python Component?",
+          "back": "A Containerized Python Component extends Lightweight Python Components by relaxing the hermetic constraint, allowing dependencies on symbols defined outside the function and code in adjacent Python modules."
+        },
+        {
+          "front": "How are pipelines defined in KFP?",
+          "back": "Pipelines are defined with a pipeline function decorated with the @dsl.pipeline decorator."
+        },
+        {
+          "front": "What are the four parts of a pipeline definition?",
+          "back": "1. The pipeline decorator\n2. Inputs and outputs declared in the function signature\n3. Data passing and task dependencies\n4. Task configurations"
+        },
+        {
+          "front": "How is data passed between tasks in a pipeline?",
+          "back": "Data is passed between tasks using the PipelineTask's .output and .outputs attributes."
+        },
+        {
+          "front": "What is a Container Component?",
+          "back": "A Container Component is a component that allows authors to set the image, command, and args directly, enabling the execution of shell scripts, use of other languages and binaries, etc."
+        },
+        {
+          "front": "How is a Container Component created?",
+          "back": "A Container Component is created using the @dsl.container_component decorator and returning a dsl.ContainerSpec object with image, command, and args specified."
+        },
+        {
+          "front": "What is the purpose of dsl.OutputPath in Container Components?",
+          "back": "dsl.OutputPath is used to specify output parameters in Container Components. It provides a system-generated path where the component should write its output as JSON."
+        },
+        {
+          "front": "What is an Importer Component?",
+          "back": "An Importer Component is a pre-baked component used to load a machine learning artifact from a URI into the current pipeline and ML Metadata."
+        },
+        {
+          "front": "How is an Importer Component used in a pipeline?",
+          "back": "An Importer Component is used by calling dsl.importer() with arguments for artifact_uri, artifact_class, reimport, and optionally metadata."
+        },
+        {
+          "front": "What is the purpose of the 'reimport' argument in dsl.importer?",
+          "back": "The 'reimport' argument determines whether KFP should check if the artifact has already been imported to ML Metadata (False) or always reimport it as a new artifact (True)."
+        },
+          {
+            "front": "What is the purpose of compiling a KFP pipeline?",
+            "back": "To create a YAML file (Intermediate Representation or IR YAML) containing a hermetic representation of the pipeline, which can be submitted for execution."
+          },
+          {
+            "front": "What is the main content of the IR YAML file?",
+            "back": "It contains a serialized PipelineSpec protocol buffer message, which is a platform-agnostic pipeline representation."
+          },
+          {
+            "front": "What does the KFP DSL compiler do by default during compilation?",
+            "back": "It performs static type checking to ensure type consistency between components that pass data between one another."
+          },
+          {
+            "front": "What are the three core types of control flow in KFP pipelines?",
+            "back": "1. Conditions\n2. Loops\n3. Exit handling"
+          },
+          {
+            "front": "What is the purpose of dsl.If in KFP?",
+            "back": "dsl.If enables conditional execution of tasks within its scope based on the output of an upstream task or pipeline input parameter."
+          },
+          {
+            "front": "What is the purpose of dsl.OneOf in KFP?",
+            "back": "dsl.OneOf is used to gather outputs from mutually exclusive branches into a single task output which can be consumed by a downstream task or outputted from a pipeline."
+          },
+          {
+            "front": "What does the dsl.ParallelFor context manager allow in KFP?",
+            "back": "It allows parallel execution of tasks over a static set of items."
+          },
+          {
+            "front": "What is the purpose of dsl.Collected in KFP?",
+            "back": "dsl.Collected is used with dsl.ParallelFor to gather outputs from a parallel loop of tasks."
+          },
+          {
+            "front": "What is the purpose of dsl.ExitHandler in KFP?",
+            "back": "dsl.ExitHandler allows pipeline authors to specify an exit task which will run after the tasks within the context manager's scope finish execution, even if one of those tasks fails."
+          },
+          {
+            "front": "What is the purpose of the dsl.PipelineTaskFinalStatus annotation?",
+            "back": "It provides access to pipeline and task status metadata, including pipeline failure or success status, in an exit task."
+          },
+          {
+            "front": "What does the .ignore_upstream_failure() task method do?",
+            "back": "It causes a task to ignore failures of any specified upstream tasks, allowing it to execute regardless of upstream task failures."
+          },
+          {
+            "front": "What is caching in Kubeflow Pipelines?",
+            "back": "Caching allows you to reuse the results of a component execution in subsequent runs if the component is executed again with the same inputs and parameters."
+          },
+          {
+            "front": "How is caching enabled or disabled for a specific component in KFP?",
+            "back": "Caching is enabled by default. It can be disabled for a component by calling .set_caching_options(enable_caching=False) on a task object."
+          },
+          {
+            "front": "How can you enable or disable caching for all components in a pipeline?",
+            "back": "By setting the argument 'enable_caching' when submitting a pipeline for execution using the Client().create_run_from_pipeline_func() method."
+          },
+          {
+            "front": "What is the purpose of the --disable-execution-caching-by-default flag in KFP SDK v2.10.0?",
+            "back": "It disables caching for all pipeline tasks by default when compiling a pipeline."
+          },
+          {
+            "front": "What flavor YAML does KFP compile to?",
+            "back": "It compiles the pipeline code into an Argo workflow YAML"
+          }
+
+  ]

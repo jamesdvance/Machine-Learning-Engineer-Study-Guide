@@ -1,0 +1,39 @@
+{
+    "flashcards": [
+      {
+        "category": "Arrays",
+        "cards": [
+          {
+            "question": "How do you declare an integer array of size 5?",
+            "answer": "int numbers[5];"
+          },
+          {
+            "question": "How do you initialize an array with values?",
+            "answer": "int numbers[] = {1, 2, 3, 4, 5};"
+          }
+        ]
+      },
+      {
+        "category": "Pointers",
+        "cards": [
+          {
+            "question": "How do you declare a pointer to an integer?",
+            "answer": "int* ptr;"
+          },
+          {
+            "question": "How do you assign the address of a variable 'x' to a pointer 'ptr'?",
+            "answer": "ptr = &x;"
+          }
+        ]
+      },
+      {
+        "category": "Classes",
+        "cards": [
+          {
+            "question": "What is the basic syntax for declaring a class named 'Person'?",
+            "answer": "class Person {\npublic:\n    // public members\nprivate:\n    // private members\n};"
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,382 @@
+[
+    {
+      "question": "What is Apache Spark?",
+      "answer": "Apache Spark is an open-source, distributed computing system used for big data processing and analytics."
+    },
+    {
+      "question": "What language was Spark originally written in?",
+      "answer": "Spark was originally written in Scala."
+    },
+    {
+      "question": "What is an RDD in Spark?",
+      "answer": "RDD stands for Resilient Distributed Dataset. It's the fundamental data structure of Spark, representing an immutable, partitioned collection of elements that can be operated on in parallel."
+    },
+    {
+      "question": "What is Spark SQL?",
+      "answer": "Spark SQL is a Spark module for structured data processing. It provides a programming abstraction called DataFrames and can also act as a distributed SQL query engine."
+    },
+    {
+      "question": "What is the difference between Spark and Hadoop?",
+      "answer": "While both are big data frameworks, Spark processes data in-memory, making it faster for many applications. Hadoop uses disk-based processing through MapReduce. Spark can run on top of Hadoop's distributed file system (HDFS)."
+    },
+    {
+      "question": "What is a Spark Driver?",
+      "answer": "The Spark Driver is the program that runs on the master node of the cluster, declaring transformations and actions on data RDDs."
+    },
+    {
+      "question": "What are Spark Executors?",
+      "answer": "Executors are worker nodes' processes in charge of running individual tasks in a given Spark job."
+    },
+    {
+      "question": "What is Spark Streaming?",
+      "answer": "Spark Streaming is an extension of the core Spark API that enables scalable, high-throughput, fault-tolerant stream processing of live data streams."
+    },
+    {
+      "question": "What is a DAG in Spark?",
+      "answer": "DAG stands for Directed Acyclic Graph. In Spark, a DAG is a sequence of computations performed on data, where each node is an RDD partition and each edge is a transformation."
+    },
+    {
+      "question": "What are the main programming languages supported by Spark?",
+      "answer": "Spark supports Scala, Java, Python, and R."
+    },
+    {
+      "question": "What is a Spark shuffle?",
+      "answer": "A Spark shuffle is the process of redistributing data across partitions that may involve moving data between executors on different nodes."
+    },
+    {
+      "question": "When does a shuffle occur in Spark?",
+      "answer": "A shuffle typically occurs when an operation requires redistributing data across partitions, such as during groupByKey, reduceByKey, join, or sort operations."
+    },
+    {
+      "question": "What are the two main phases of a Spark shuffle?",
+      "answer": "The two main phases are: 1) The write phase (or shuffle write), where data is written to storage. 2) The read phase (or shuffle read), where data is read and aggregated."
+    },
+    {
+      "question": "What happens during the shuffle write phase?",
+      "answer": "During the shuffle write phase, mappers write their output to local disk, creating one file per reducer that will be used in the next stage."
+    },
+    {
+      "question": "What happens during the shuffle read phase?",
+      "answer": "During the shuffle read phase, reducers read the relevant files written by mappers in the previous stage, usually transferring data across the network."
+    },
+    {
+      "question": "What is the impact of shuffling on Spark job performance?",
+      "answer": "Shuffling can be expensive in terms of performance because it involves disk I/O, data serialization, and network I/O. It often becomes a bottleneck in Spark jobs."
+    },
+    {
+      "question": "How does Spark optimize shuffles?",
+      "answer": "Spark uses techniques like shuffle file consolidation, shuffle spill compression, serialized shuffle, and tungsten sort to optimize shuffles."
+    },
+    {
+      "question": "What is the shuffle service in Spark?",
+      "answer": "The shuffle service is an external service that runs on each node to persist shuffle files beyond the lifetime of Spark executors, enabling dynamic resource allocation."
+    },
+    {
+      "question": "How can developers minimize shuffling in Spark applications?",
+      "answer": "Developers can minimize shuffling by using operations that don't require shuffles when possible, controlling partitioning, and caching data appropriately."
+    },
+    {
+      "question": "What is the difference between narrow and wide dependencies in relation to shuffling?",
+      "answer": "Narrow dependencies don't require shuffling (e.g., map, filter), while wide dependencies do require shuffling (e.g., groupByKey, reduceByKey) as they need data from other partitions."
+    },
+      {
+        "question": "How do Spark applications run on clusters?",
+        "answer": "Spark applications run as independent sets of processes on a cluster, coordinated by the SparkContext object in the main program (driver program)."
+      },
+      {
+        "question": "What is the role of a cluster manager in Spark?",
+        "answer": "Cluster managers allocate resources across applications. Spark can connect to several types, including Spark's standalone cluster manager, Mesos, YARN, or Kubernetes."
+      },
+      {
+        "question": "What are executors in Spark?",
+        "answer": "Executors are processes that run on nodes in the cluster. They run computations and store data for the application."
+      },
+      {
+        "question": "What does the SparkContext do after connecting to a cluster manager?",
+        "answer": "It acquires executors on cluster nodes, sends the application code to the executors, and then sends tasks to the executors to run."
+      },
+      {
+        "question": "How long do executor processes typically stay up?",
+        "answer": "Executor processes stay up for the duration of the whole application and run tasks in multiple threads."
+      },
+      {
+        "question": "Can data be shared across different Spark applications?",
+        "answer": "No, data cannot be shared across different Spark applications (instances of SparkContext) without writing it to an external storage system."
+      },
+      {
+        "question": "What are the benefits of Spark's architecture where each application gets its own executor processes?",
+        "answer": "It isolates applications from each other, both on the scheduling side (each driver schedules its own tasks) and executor side (tasks from different applications run in different JVMs)."
+      },
+      {
+        "question": "What is required of the driver program in terms of network accessibility?",
+        "answer": "The driver program must listen for and accept incoming connections from its executors throughout its lifetime, so it must be network addressable from the worker nodes."
+      },
+      {
+        "question": "Where should the driver program ideally be run in relation to worker nodes?",
+        "answer": "The driver program should be run close to the worker nodes, preferably on the same local area network, for efficient task scheduling."
+      },
+      {
+        "question": "Name four cluster manager types supported by Spark.",
+        "answer": "1. Standalone, 2. Apache Mesos (deprecated), 3. Hadoop YARN, 4. Kubernetes"
+      },
+      {
+        "question": "How can Spark applications be submitted to a cluster?",
+        "answer": "Applications can be submitted to a cluster of any type using the spark-submit script."
+      },
+      {
+        "question": "What monitoring option is typically available for each driver program?",
+        "answer": "Each driver program has a web UI, typically on port 4040, that displays information about running tasks, executors, and storage usage."
+      },
+      {
+        "question": "What is the difference between 'cluster' and 'client' deploy modes?",
+        "answer": "In 'cluster' mode, the framework launches the driver inside the cluster. In 'client' mode, the submitter launches the driver outside of the cluster."
+      },
+      {
+        "question": "What is a task in Spark?",
+        "answer": "A task is a unit of work that will be sent to one executor."
+      },
+      {
+        "question": "What is a job in Spark?",
+        "answer": "A job is a parallel computation consisting of multiple tasks that gets spawned in response to a Spark action (e.g., save, collect)."
+      },
+        {
+          "question": "What is the main abstraction Spark provides?",
+          "answer": "The main abstraction Spark provides is a resilient distributed dataset (RDD), which is a collection of elements partitioned across the nodes of the cluster that can be operated on in parallel."
+        },
+        {
+          "question": "What are the two types of operations RDDs support?",
+          "answer": "RDDs support two types of operations: transformations, which create a new dataset from an existing one, and actions, which return a value to the driver program after running a computation on the dataset."
+        },
+        {
+          "question": "What is a key characteristic of transformations in Spark?",
+          "answer": "All transformations in Spark are lazy, meaning they do not compute their results right away. Instead, they remember the transformations applied to some base dataset and compute them when an action requires a result to be returned to the driver program."
+        },
+        {
+          "question": "What method can be used to persist an RDD in memory?",
+          "answer": "You can use the persist() or cache() methods to mark an RDD to be persisted in memory across operations."
+        },
+        {
+          "question": "What are the two types of shared variables that Spark provides?",
+          "answer": "Spark provides two types of shared variables: broadcast variables and accumulators."
+        },
+        {
+          "question": "What is a broadcast variable used for?",
+          "answer": "Broadcast variables allow the programmer to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks."
+        },
+        {
+          "question": "What are accumulators in Spark?",
+          "answer": "Accumulators are variables that are only 'added' to through an associative and commutative operation and can be efficiently supported in parallel. They can be used to implement counters or sums."
+        },
+        {
+          "question": "What is a shuffle operation in Spark?",
+          "answer": "A shuffle is Spark's mechanism for re-distributing data so that it's grouped differently across partitions. This typically involves copying data across executors and machines, making it a complex and costly operation."
+        },
+        {
+          "question": "Name three operations that can cause a shuffle in Spark.",
+          "answer": "Operations that can cause a shuffle include repartition operations like repartition and coalesce, 'ByKey operations (except for counting) like groupByKey and reduceByKey, and join operations like cogroup and join."
+        },
+        {
+          "question": "What are the two main phases of a Spark shuffle?",
+          "answer": "The two main phases of a Spark shuffle are: 1) The write phase (or shuffle write), where data is written to storage, and 2) The read phase (or shuffle read), where data is read and aggregated."
+        },
+        {
+          "question": "What is the purpose of the SparkContext?",
+          "answer": "The SparkContext tells Spark how to access a cluster. It's the main entry point for Spark functionality and can be used to create RDDs, accumulators, and broadcast variables."
+        },
+        {
+          "question": "How can you submit a Spark application to a cluster?",
+          "answer": "You can submit a Spark application to a cluster using the bin/spark-submit script, which allows you to submit your application to any supported cluster manager."
+        },
+        {
+          "question": "What is the recommended way to do unit testing with Spark?",
+          "answer": "For unit testing, create a SparkContext in your test with the master URL set to 'local', run your operations, and then call SparkContext.stop() to tear it down. Make sure to stop the context within a finally block or the test framework's tearDown method."
+        },
+        {
+          "question": "What are the main components involved when running Spark on a cluster?",
+          "answer": "The main components are: the driver program (which contains the SparkContext), the cluster manager (e.g., Standalone, Mesos, YARN, or Kubernetes), and the executor processes running on worker nodes."
+        },
+        {
+          "question": "What is the difference between 'local' and 'cluster' modes in Spark?",
+          "answer": "In local mode, Spark runs on a single machine, often for development or testing. In cluster mode, Spark distributes computation across multiple machines in a cluster for processing large datasets."
+        },
+          {
+            "question": "What are the main factors to consider when calculating Spark resources?",
+            "answer": "1. Size of your data, 2. Complexity of your operations, 3. Desired processing time, 4. Available hardware resources"
+          },
+          {
+            "question": "What is the data-based approach for estimating the number of Spark workers?",
+            "answer": "Estimate 1 core for every 10-100 GB of data, depending on complexity. For example, for 1 TB of data, you might need 10-100 cores."
+          },
+          {
+            "question": "How can you use a time-based approach to estimate the number of Spark workers?",
+            "answer": "Benchmark your job on a single machine, then divide the desired runtime by the single-machine runtime to get an estimate of cores needed."
+          },
+          {
+            "question": "What's a good rule of thumb for starting with Spark workers?",
+            "answer": "Start with 5-10 worker nodes and adjust based on performance."
+          },
+          {
+            "question": "What's the general guideline for total memory allocation in a Spark cluster?",
+            "answer": "Allocate 2-3 times the size of your dataset in memory across the cluster."
+          },
+          {
+            "question": "How do you calculate memory per executor in Spark?",
+            "answer": "Executor memory = (Total node memory - Reserved memory for OS and other services) / Number of executors per node"
+          },
+          {
+            "question": "What percentage of total memory is typically reserved for the OS and other services?",
+            "answer": "Typically, 10-15% of total memory is reserved for the OS and other services."
+          },
+          {
+            "question": "What should you consider when caching RDDs in Spark?",
+            "answer": "When caching RDDs, factor in additional memory beyond your basic processing needs."
+          },
+          {
+            "question": "What's the recommended level of parallelism in a Spark cluster?",
+            "answer": "Aim for 2-3 tasks per CPU core in your cluster."
+          },
+          {
+            "question": "How can you monitor Spark job performance?",
+            "answer": "Use Spark UI to identify bottlenecks and monitor job performance."
+          },
+          {
+            "question": "What are shuffle operations in Spark, and why are they important for resource calculation?",
+            "answer": "Shuffle operations involve redistributing data across partitions. They are often the most resource-intensive operations, so optimizing them is crucial for efficient resource use."
+          },
+          {
+            "question": "What is data skew in Spark, and why is it important for resource calculation?",
+            "answer": "Data skew refers to uneven distribution of data across partitions. It's important to ensure even distribution for efficient resource utilization."
+          },
+          {
+            "question": "Why might you need to adjust your initial Spark resource calculations?",
+            "answer": "Optimal configuration often requires experimentation and fine-tuning based on your specific use case and data characteristics."
+          },
+          {
+            "question": "In a Spark cluster, what's the relationship between cores and tasks?",
+            "answer": "It's recommended to have 2-3 tasks per CPU core in your cluster for optimal performance."
+          },
+          {
+            "question": "What's an example calculation for executor memory in Spark?",
+            "answer": "For a node with 128 GB RAM, reserving 16 GB (12.5%) and using 4 executors per node, each executor would get (128 GB - 16 GB) / 4 = 28 GB of memory."
+          },
+            {
+              "question": "How do you initialize a SparkSession in PySpark?",
+              "answer": "from pyspark.sql import SparkSession\n\nspark = SparkSession.builder \\\n    .appName(\"MyApp\") \\\n    .getOrCreate()"
+            },
+            {
+              "question": "How do you create a DataFrame from a list in PySpark?",
+              "answer": "data = [(1, \"Alice\"), (2, \"Bob\"), (3, \"Charlie\")]\ncolumns = [\"id\", \"name\"]\ndf = spark.createDataFrame(data, columns)"
+            },
+            {
+              "question": "How do you read a CSV file into a DataFrame in PySpark?",
+              "answer": "df = spark.read.csv(\"path/to/file.csv\", header=True, inferSchema=True)"
+            },
+            {
+              "question": "How do you select specific columns from a DataFrame in PySpark?",
+              "answer": "selected_df = df.select(\"column1\", \"column2\")"
+            },
+            {
+              "question": "How do you filter rows in a DataFrame based on a condition in PySpark?",
+              "answer": "filtered_df = df.filter(df.age > 30)"
+            },
+            {
+              "question": "How do you add a new column to a DataFrame in PySpark?",
+              "answer": "from pyspark.sql.functions import expr\n\nnew_df = df.withColumn(\"new_column\", expr(\"column1 + column2\"))"
+            },
+            {
+              "question": "How do you perform a groupBy operation followed by aggregation in PySpark?",
+              "answer": "from pyspark.sql.functions import avg, sum\n\nresult = df.groupBy(\"department\").agg(avg(\"salary\").alias(\"avg_salary\"), \\\n                                    sum(\"salary\").alias(\"total_salary\"))"
+            },
+            {
+              "question": "How do you join two DataFrames in PySpark?",
+              "answer": "joined_df = df1.join(df2, df1.id == df2.id, \"inner\")"
+            },
+            {
+              "question": "How do you sort a DataFrame by a column in descending order in PySpark?",
+              "answer": "sorted_df = df.orderBy(df.column.desc())"
+            },
+            {
+              "question": "How do you create a temporary view of a DataFrame in PySpark?",
+              "answer": "df.createOrReplaceTempView(\"my_temp_view\")\n\n# Now you can use SQL queries\nresult = spark.sql(\"SELECT * FROM my_temp_view WHERE column > 5\")"
+            },
+            {
+              "question": "How do you write a DataFrame to a Parquet file in PySpark?",
+              "answer": "df.write.parquet(\"path/to/output.parquet\")"
+            },
+            {
+              "question": "How do you use a UDF (User Defined Function) in PySpark?",
+              "answer": "from pyspark.sql.functions import udf\nfrom pyspark.sql.types import IntegerType\n\ndef square(x):\n    return x * x\n\nsquare_udf = udf(square, IntegerType())\n\nresult = df.withColumn(\"squared\", square_udf(df.number))"
+            },
+            {
+              "question": "How do you pivot a DataFrame in PySpark?",
+              "answer": "pivoted_df = df.groupBy(\"id\").pivot(\"category\").sum(\"amount\")"
+            },
+            {
+              "question": "How do you handle null values in a DataFrame column in PySpark?",
+              "answer": "from pyspark.sql.functions import when, col\n\ndf_cleaned = df.withColumn(\"column\", \\\n    when(col(\"column\").isNull(), 0).otherwise(col(\"column\")))"
+            },
+            {
+              "question": "How do you calculate summary statistics for numeric columns in a PySpark DataFrame?",
+              "answer": "summary = df.select(\"numeric_column1\", \"numeric_column2\").summary()"
+            },
+              {
+                "question": "What are the two main serialization libraries provided by Spark?",
+                "answer": "1. Java serialization (default)\n2. Kryo serialization"
+              },
+              {
+                "question": "How can you switch to using Kryo serialization in Spark?",
+                "answer": "Initialize your job with a SparkConf and call:\nconf.set(\"spark.serializer\", \"org.apache.spark.serializer.KryoSerializer\")"
+              },
+              {
+                "question": "What are the three main considerations in tuning memory usage in Spark?",
+                "answer": "1. The amount of memory used by your objects\n2. The cost of accessing those objects\n3. The overhead of garbage collection"
+              },
+              {
+                "question": "What are the two categories of memory usage in Spark?",
+                "answer": "1. Execution memory: used for computation in shuffles, joins, sorts and aggregations\n2. Storage memory: used for caching and propagating internal data across the cluster"
+              },
+              {
+                "question": "What does the configuration 'spark.memory.fraction' represent?",
+                "answer": "It expresses the size of the unified memory region (M) as a fraction of the (JVM heap space - 300MiB). The default value is 0.6."
+              },
+              {
+                "question": "How can you estimate the memory consumption of a particular object in Spark?",
+                "answer": "Use SizeEstimator's estimate method to determine the amount of space an object will occupy."
+              },
+              {
+                "question": "What are some ways to reduce memory consumption in Spark applications?",
+                "answer": "1. Use arrays of objects and primitive types instead of standard Java/Scala collections\n2. Avoid nested structures with many small objects and pointers\n3. Use numeric IDs or enumeration objects instead of strings for keys\n4. Use compressed pointers with -XX:+UseCompressedOops JVM flag (for <32 GiB RAM)\n5. Store objects in serialized form using serialized StorageLevels"
+              },
+              {
+                "question": "What is the downside of storing data in serialized form in Spark?",
+                "answer": "Slower access times due to having to deserialize each object on the fly."
+              },
+              {
+                "question": "How can you collect statistics on garbage collection in Spark?",
+                "answer": "Add the following Java options:\n-verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps"
+              },
+              {
+                "question": "What is the goal of garbage collection tuning in Spark?",
+                "answer": "To ensure that only long-lived RDDs are stored in the Old generation and that the Young generation is sufficiently sized to store short-lived objects, helping avoid full GCs to collect temporary objects created during task execution."
+              },
+              {
+                "question": "What should you do if there are too many minor collections but not many major GCs in Spark?",
+                "answer": "Allocate more memory for Eden by setting the size of the Young generation using the option -Xmn=4/3*E, where E is an over-estimate of how much memory each task will need."
+              },
+              {
+                "question": "How can you improve the level of parallelism in Spark?",
+                "answer": "1. Set the number of 'map' tasks for each file according to its size\n2. For distributed 'reduce' operations, use the largest parent RDD's number of partitions\n3. Pass the level of parallelism as a second argument to operations\n4. Set the config property spark.default.parallelism\n5. Aim for 2-3 tasks per CPU core in your cluster"
+              },
+              {
+                "question": "How can you reduce the size of serialized tasks in Spark?",
+                "answer": "Use the broadcast functionality available in SparkContext to greatly reduce the size of each serialized task, especially for large objects from the driver program used inside tasks."
+              },
+              {
+                "question": "What are the levels of data locality in Spark, from closest to farthest?",
+                "answer": "1. PROCESS_LOCAL\n2. NODE_LOCAL\n3. NO_PREF\n4. RACK_LOCAL\n5. ANY"
+              },
+              {
+                "question": "What are the two main concerns for tuning a Spark application mentioned in the summary?",
+                "answer": "1. Data serialization\n2. Memory tuning"
+              }
+  ]
