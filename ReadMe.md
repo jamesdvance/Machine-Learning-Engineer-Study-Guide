@@ -4,10 +4,10 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 
 ## Data
 - Storage
-    - Object Storage
-        - S3
-        - GCS
-        - Azure Blob
+    - [Object Storage](data/storage/object-storage/ReadMe.md)
+        - [S3](data/storage/object-storage/s3/ReadMe.md)
+        - [GCS](data/storage/object-storage/gcs/ReadMe.md)
+        - [Azure Blob](data/storage/object-storage/azure-blob/ReadMe.md)
     - Data Lakes
         - Delta Lake
         - Apache Hudi

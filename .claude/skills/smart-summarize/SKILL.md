@@ -10,6 +10,8 @@ This skill describes how to research and report on each subject area to fill out
 
 The entire write-up for a section should be done within a ReadMe.md file. So if the folder is called 's3', the write-up should exist within the s3/ReadMe.md file. The write-up should start with a summary with small sections that can be reviewed later. This should include a few small paragraphs and bullets of important points to remember. Then, a longer, more detailed write-up should follow. It should vary in length between several pages and a short chapter in a book. 
 
+Avoid emoji's and symbols of any kind. Bullets and numbered lists are acceptable.
+
 ## Topics
 The write-up should be written for a mid-career machine learning engineer who has on the job experience but may not be familiar with your particular topic. You do not need to explain simple concepts like classes in object oriented programming or basic programming syntax. When in doubt, briefly explain a concept in order to refresh the reader's memory but do not belabor to explain concepts that are probably already understood by a mid-career MLE. 
 
@@ -22,3 +24,6 @@ Using your ingrained knowledge is fine for most use cases. However, before you s
 
 ## Before Starting
 You MUST NOT start a chapter if there is already text inside the ReadMe.md. 
+
+## When Children Are Present
+We also want to create chapters of topics where children are present. For example, 'object-storage' should have a chapter that talks about the use of Object storage in general and compares and contrasts the three child topics (azure-blob, gcs, and s3)
