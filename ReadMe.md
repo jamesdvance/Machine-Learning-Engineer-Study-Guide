@@ -1,93 +1,630 @@
 # Machine Learning Engineer Study Guide
 After years of trying to organize my learning in notebooks, flashcards and my increasingly porous brain, this repo is an attempt to build something lasting. Pull requests welcome. 
 
-## Programming
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| [Object Oriented Programming](Programming/Object-Oriented-Programming.md) | - [x] SOLID Principals | TBD |
-| [Design Documents](Programming/Design-Documents.md) | [x] [Eugene Yan: Writing ML Design Docs](https://eugeneyan.com/writing/ml-design-docs/)| TBD | 
 
-## Python
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| [OOP In Python](Python/OOP-In-Python.md) | - [x] [OOP In Python (Real Python)](https://realpython.com/python3-object-oriented-programming/) | TBD | 
-| [Python Testing With PyTest](Python/Python-Testing-With-Pytest.md) | - [x] Pytest Book (Brian Okken)  | TBD | 
+## Data
+- Storage
+    - Object Storage
+        - S3
+        - GCS
+        - Azure Blob
+    - Data Lakes
+        - Delta Lake
+        - Apache Hudi
+    - Data Warehouses
+        - Snowflake
+        - BigQuery
+        - Redshift
+    - Vector Databases
+        - Pinecone
+        - Milvus
+        - Weaviate
+        - Qdrant
+        - Chroma
+    - Feature Stores
+        - Feast
+        - Tecton
+        - Hopsworks
+- Formats
+    - Image
+        - base64
+        - JPEG
+        - PNG
+        - WebP
+        - TIFF
+    - Video
+        - H.264
+        - H.265 (HEVC)
+        - VP9
+        - AV1
+    - Text
+        - JSON
+        - JSONL
+        - XML
+        - CSV
+    - Tabular
+        - Iceberg
+        - Parquet
+        - ORC
+        - Avro
+    - ML-Specific
+        - TFRecord
+        - Safetensors
+        - ONNX
+        - HDF5
+- Processing
+    - Batch
+        - Apache Spark
+        - Dask
+        - Ray Data
+    - Streaming
+        - Apache Kafka
+        - Apache Flink
+        - Spark Streaming
+    - ETL/ELT
+        - dbt
+        - Airbyte
+        - Fivetran
+- Versioning
+    - DVC
+    - LakeFS
+    - Delta Lake Time Travel
 
-## C++
-| C++ Standard Library | [*] [Hacking CPP](https://hackingcpp.com/cpp/std/algorithms/intro.html) | TBD | 
+
+## Modeling
+- Forecasting
+    - Classical Methods
+        - ARIMA
+        - Exponential Smoothing
+        - Prophet
+    - Deep Learning Methods
+        - Temporal Fusion Transformers
+        - N-BEATS
+        - DeepAR
+        - TimesNet
+    - Concepts
+        - Stationarity
+        - Seasonality
+        - Trend Decomposition
+        - Cross-Validation for Time Series
+- Recommendation
+    - Collaborative Filtering
+        - Matrix Factorization
+        - Alternating Least Squares
+        - Neural Collaborative Filtering
+    - Content-Based Filtering
+    - Hybrid Methods
+    - Two-Tower Models
+    - Sequential Recommendation
+        - Transformers4Rec
+        - SASRec
+    - Retrieval and Ranking
+        - Approximate Nearest Neighbors
+        - FAISS
+        - ScaNN
+- Vision
+    - Classification
+        - CNNs
+            - ResNet
+            - EfficientNet
+            - ConvNeXt
+        - Vision Transformers
+            - ViT
+            - Swin Transformer
+            - DeiT
+    - Object Detection
+        - Two-Stage Detectors
+            - Faster R-CNN
+            - Mask R-CNN
+        - One-Stage Detectors
+            - YOLO
+            - SSD
+            - RetinaNet
+        - Transformer-Based
+            - DETR
+            - DINO
+    - Segmentation
+        - Semantic Segmentation
+            - U-Net
+            - DeepLab
+        - Instance Segmentation
+            - Mask R-CNN
+        - Panoptic Segmentation
+    - Generative
+        - GANs
+            - StyleGAN
+            - CycleGAN
+        - Diffusion Models
+            - Stable Diffusion
+            - DALL-E
+            - Imagen
+        - VAEs
+    - Self-Supervised Learning
+        - Contrastive Learning
+            - SimCLR
+            - MoCo
+        - Masked Image Modeling
+            - MAE
+            - BEiT
+- LLMs
+    - Architectures
+        - Decoder-Only
+            - GPT
+            - LLaMA
+            - Mistral
+        - Encoder-Decoder
+            - T5
+            - BART
+    - Training
+        - Pretraining
+            - Causal Language Modeling
+            - Masked Language Modeling
+        - Fine-Tuning
+            - Full Fine-Tuning
+            - LoRA
+            - QLoRA
+            - Prefix Tuning
+            - Prompt Tuning
+        - Alignment
+            - RLHF
+            - DPO
+            - Constitutional AI
+    - Inference Optimization
+        - Quantization
+            - INT8
+            - INT4
+            - GPTQ
+            - AWQ
+        - KV Cache
+        - Speculative Decoding
+        - Continuous Batching
+    - Context Management
+        - RAG
+            - Chunking Strategies
+            - Retrieval Methods
+            - Reranking
+        - Long Context
+            - RoPE Scaling
+            - Sliding Window Attention
+    - Prompting
+        - Zero-Shot
+        - Few-Shot
+        - Chain of Thought
+        - Tree of Thought
+        - ReAct
+    - Agents
+        - Tool Use
+        - Planning
+        - Memory Systems
+- VLMs
+    - Architectures
+        - CLIP
+        - LLaVA
+        - Flamingo
+        - GPT-4V
+        - Gemini
+    - Tasks
+        - Image Captioning
+        - Visual Question Answering
+        - Document Understanding
+        - OCR
+- NLP
+    - Text Classification
+        - Sentiment Analysis
+        - Intent Classification
+        - Topic Modeling
+    - Named Entity Recognition
+        - SpaCy
+        - Flair
+        - Transformer-Based NER
+    - Text Embedding
+        - Word2Vec
+        - GloVe
+        - Sentence Transformers
+        - OpenAI Embeddings
+    - Information Extraction
+        - Relation Extraction
+        - Event Extraction
+    - Question Answering
+        - Extractive QA
+        - Generative QA
+    - Summarization
+        - Extractive
+        - Abstractive
+    - Machine Translation
+        - Sequence-to-Sequence
+        - Transformer Models
+- Tabular
+    - Gradient Boosting
+        - XGBoost
+        - LightGBM
+        - CatBoost
+    - Neural Networks for Tabular
+        - TabNet
+        - TabTransformer
+        - FT-Transformer
+    - Feature Engineering
+        - Encoding Categorical Variables
+        - Feature Scaling
+        - Feature Selection
+    - AutoML
+        - AutoGluon
+        - H2O
+        - FLAML
+- Reinforcement Learning
+    - Concepts
+        - Markov Decision Processes
+        - Bellman Equations
+        - Exploration vs Exploitation
+    - Value-Based Methods
+        - Q-Learning
+        - DQN
+        - Double DQN
+        - Dueling DQN
+    - Policy-Based Methods
+        - REINFORCE
+        - Actor-Critic
+        - A2C/A3C
+        - PPO
+        - TRPO
+    - Model-Based RL
+        - World Models
+        - MuZero
+    - Multi-Agent RL
+    - Inverse Reinforcement Learning
+    - Frameworks
+        - Stable Baselines3
+        - RLlib
+        - CleanRL
+    
 
 ## MLOps
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| [Defining MLOps](MLOps/Defining-MLOps.md) | [] | TBD | 
-| [Training / Testing Skew](MLOps/Training-Testing-Skew.md) |  | TBD | 
-| [Feature Stores](MLOps/Feature-Stores.md) | - [x] Feathr (LinkedIn). MLOps.community podcast. 9/2/22 <br/> - [x] AWS Sagemaker-Feature Store Introduction <br> - [x] Eugene Yan: Feature Stores <br/> - [x] Netflix - Distributed Time Travel <br/> - [] [Feast Feature Store](https://docs.feast.dev/) | TBD | 
-| [Experiment Tracking](MLOps/Experiment-Tracking.md) | - [] | TBD|
-| Data Version Control | - [] [DVC Docs](https://dvc.org/) | TBD | 
+- Monitoring
+    - Prometheus
+    - Grafana
+    - Model Monitoring
+        - Data Drift Detection
+        - Concept Drift
+        - Performance Degradation
+    - Alerting
+        - PagerDuty
+        - Opsgenie
+- Frameworks
+    - Kubeflow
+    - Metaflow
+    - MLflow
+    - Weights & Biases
+    - ZenML
+    - Kedro
+- Orchestration
+    - Argo
+    - Airflow
+    - Prefect
+    - Dagster
+- PaaS
+    - AWS SageMaker
+    - Google Vertex AI
+    - Azure ML
+    - Databricks
+- Platforms
+    - Self-Hosted
+        - MLflow
+        - Kubeflow
+    - Managed
+        - Databricks
+        - Anyscale
+    - Feature Platforms
+        - Tecton
+        - Feast
+- CI/CD for ML
+    - Model Versioning
+    - Experiment Tracking
+    - Model Registry
+    - Automated Testing
+        - Data Validation
+        - Model Validation
+        - Integration Testing
+    - GitHub Actions
+    - GitLab CI
+- Infrastructure as Code
+    - Terraform
+    - Pulumi
+    - CloudFormation
+- Containerization
+    - Docker
+    - Container Registries
+    - Multi-Stage Builds
+- Kubernetes
+    - Deployments
+    - Services
+    - ConfigMaps and Secrets
+    - Horizontal Pod Autoscaler
+    - GPU Scheduling
+- LLMOps
+    - Evaluations
+        - Frameworks
+            - Ragas
+            - DeepEval
+            - TruLens
+            - Promptfoo
+        - Concepts
+            - Online Evaluation
+            - Offline Evaluation
+            - LLM As Judge
+            - Human Evaluation
+            - A/B Testing
+        - Metrics
+            - Faithfulness
+            - Relevance
+            - Coherence
+            - Toxicity
+            - Hallucination Detection
+    - Observability
+        - Services
+            - Langfuse
+            - Langsmith
+            - Helicone
+            - Phoenix (Arize)
+        - Concepts
+            - Trace Logging
+            - Token Usage Tracking
+            - Latency Monitoring
+            - Cost Tracking
+            - Prompt Versioning
+    - Prompt Management
+        - Version Control
+        - A/B Testing
+        - Prompt Chaining
+    - Guardrails
+        - Input Validation
+        - Output Filtering
+        - Guardrails AI
+        - NeMo Guardrails
 
-## Faster ML
-| Section | Sources | Code Examples | 
-| :---- | :---- | :---- |
-| Extending Python With C++ | TBD | TBD | 
-| Hardware For ML | [x] *Designing Machine Learning Systems* | TBD |
-| GPU Acceleration with C++ (CUDA) | TBD | TBD|
-| Pytorch AMP | TBD |TBD | 
 
-## Scaling ML 
-| Section | Sources | Code Examples | 
-| :---- | :---- | :---- |
-| Scaling RecSys | FB Recsys scaling paper | TBD | 
-| Kubernetes | [] | TBD| 
+## Programming
+- Python
+    - Core Language
+        - Data Structures
+        - Generators and Iterators
+        - Decorators
+        - Context Managers
+        - Type Hints
+    - Concurrency
+        - Threading
+        - Multiprocessing
+        - Asyncio
+    - Performance
+        - Profiling
+        - Cython
+        - Numba
+    - Scientific Stack
+        - NumPy
+        - Pandas
+        - SciPy
+    - ML Libraries
+        - Scikit-learn
+        - PyTorch
+        - TensorFlow
+        - JAX
+        - Hugging Face Transformers
+    - Testing
+        - Pytest
+        - Unittest
+        - Hypothesis
+    - Packaging
+        - Poetry
+        - pip
+        - Conda
+        - UV
+- C++
+    - Core Language
+        - Memory Management
+        - Pointers and References
+        - Templates
+        - STL
+    - Modern C++
+        - Smart Pointers
+        - Move Semantics
+        - Lambda Expressions
+        - Concurrency
+    - ML Applications
+        - CUDA Integration
+        - Custom Operators
+        - Performance Optimization
+- Rust
+    - Core Concepts
+        - Ownership and Borrowing
+        - Lifetimes
+        - Error Handling
+        - Traits
+    - Concurrency
+        - Threads
+        - Async/Await
+        - Channels
+    - ML Ecosystem
+        - Burn
+        - Candle
+        - Tokenizers
+    - Python Integration
+        - PyO3
+        - Maturin
+- Design Patterns
+    - Creational
+        - Factory
+        - Singleton
+        - Builder
+    - Structural
+        - Adapter
+        - Decorator
+        - Facade
+    - Behavioral
+        - Strategy
+        - Observer
+        - Command
+    - ML-Specific Patterns
+        - Pipeline Pattern
+        - Model Registry Pattern
+        - Feature Store Pattern
+- Object Oriented Programming
+    - Encapsulation
+    - Inheritance
+    - Polymorphism
+    - Abstraction
+    - SOLID Principles
+    - Composition vs Inheritance
+- Functional Programming
+    - Pure Functions
+    - Immutability
+    - Higher-Order Functions
+    - Map, Filter, Reduce
+    - Monads
+    - Lazy Evaluation
 
-## Systems Architecture
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| Key Value Stores | ByteByteGo | TBD | 
-| System Design Patterns | TBD | TBD | 
-| Stream Ingestion | TBD | TBD | 
 
-## ML Techniques 
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| Ensembling | *Designing Machine Learning Systems* | TBD | 
-| Feature Engineering | TBD | TBD |
-| Feature Selection  | TBD | TBD | 
-| Neural Networks | *Deep Learning With Python* | TBD |   
-| Gradient Boosting Trees | TBD | TBD | 
+## Training
+- Distributed Training
+    - Concepts
+        - Data Parallelism
+        - Model Parallelism
+        - Tensor Parallelism
+        - Pipeline Parallelism
+        - FSDP (Fully Sharded Data Parallel)
+        - ZeRO Optimization
+        - Gradient Accumulation
+        - All-Reduce
+        - Ring-AllReduce
+    - Frameworks
+        - PyTorch Distributed
+        - Horovod
+        - DeepSpeed
+        - Megatron-LM
+        - Ray Train
+        - ColossalAI
+    - Communication
+        - NCCL
+        - Gloo
+        - MPI
+- Performance
+    - Mixed Precision Training
+        - FP16
+        - BF16
+        - FP8
+    - Gradient Checkpointing
+    - Activation Checkpointing
+    - Compile Optimizations
+        - torch.compile
+        - XLA
+        - TensorRT
+    - Memory Optimization
+        - Gradient Accumulation
+        - Offloading
+        - Flash Attention
+- Frameworks
+    - PyTorch Lightning
+    - Hugging Face Accelerate
+    - Keras
+    - JAX/Flax
+    - TensorFlow
+- Observability
+    - Checkpointing
+        - State Dict Management
+        - Distributed Checkpointing
+        - Checkpoint Sharding
+    - Logging
+        - TensorBoard
+        - Weights & Biases
+        - MLflow Tracking
+    - Debugging
+        - Gradient Monitoring
+        - NaN Detection
+        - Memory Profiling
+- Cost Optimization
+    - Spot/Preemptible Instances
+    - Auto-scaling
+    - Right-sizing GPU Selection
+    - Training Budget Estimation
+    - Early Stopping
+    - Learning Rate Scheduling
+- Hyperparameter Optimization
+    - Grid Search
+    - Random Search
+    - Bayesian Optimization
+    - Optuna
+    - Ray Tune
+    - Population-Based Training
 
-## Recommender Systems
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| Popularity Bias | TBD | TBD | 
 
-## Natural Language Processing
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| Transformers | TBD | TBD | 
+## Serving
+- Frameworks
+    - KServe
+    - BentoML
+    - Seldon
+    - TorchServe
+    - TensorFlow Serving
+    - Triton Inference Server
+    - vLLM
+    - TGI (Text Generation Inference)
+    - llama.cpp
+    - Ollama
+- Performance
+    - GPU
+        - CUDA
+        - cuDNN
+        - Multi-GPU Serving
+        - GPU Memory Management
+        - Batching Strategies
+    - Intermediate Representations
+        - ONNX
+        - TensorRT
+        - OpenVINO
+        - CoreML
+    - Optimization Techniques
+        - Quantization
+            - Post-Training Quantization
+            - Quantization-Aware Training
+            - Dynamic Quantization
+        - Pruning
+        - Knowledge Distillation
+        - Model Compilation
+    - Caching
+        - KV Cache
+        - Prompt Caching
+        - Semantic Caching
+    - Batching
+        - Dynamic Batching
+        - Continuous Batching
+        - Micro-batching
+- Scalability
+    - Load Balancing
+    - Horizontal Scaling
+    - Auto-scaling
+    - Multi-Region Deployment
+- Latency Optimization
+    - Model Warmup
+    - Connection Pooling
+    - Async Inference
+    - Streaming Responses
+- API Design
+    - REST APIs
+    - gRPC
+    - WebSockets
+    - GraphQL
+- Edge Deployment
+    - Mobile
+        - TensorFlow Lite
+        - CoreML
+        - ONNX Runtime Mobile
+    - Browser
+        - TensorFlow.js
+        - ONNX Runtime Web
+        - WebGPU
+    - Embedded
+        - NVIDIA Jetson
+        - Edge TPU
 
-## Computer Vision
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| Transformers | TBD | TBD | 
-
-## Reinforcement Learning
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| Contraint Satisfaction in RL | TBD | TBD | 
-
-## Optimization 
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| Transformers | TBD | TBD | 
-
-## Cloud
-| Section | Sources | Code Examples |
-| :---- | :---- | :---- |
-| AWS Cloud Development Toolkit (CDK) | TBD | TBD | 
-
-### [Resources](/Resources)
-
-#### [Future Resource List](Resources_Queue.md)
-
-
-
+## Case Studies
+- System Design
+    - Pricing Engine
+- Performance Optimization
+- Training Scaling
