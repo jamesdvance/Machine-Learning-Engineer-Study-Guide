@@ -539,6 +539,49 @@ For multi-cloud strategies:
 -  Audit access with cloud-native logging tools
 -  Use private endpoints for sensitive workloads
 
+## S3-Compatible Alternatives
+
+Beyond the three major cloud providers, several S3-compatible alternatives offer compelling economics for cost-sensitive ML workloads. These services implement the S3 API, enabling use of existing tools and libraries while providing significant cost savings.
+
+### Alternative Provider Comparison
+
+| Provider | Storage Cost | Egress | Best For |
+|----------|--------------|--------|----------|
+| Cloudflare R2 | $0.015/GB/mo | Free | High egress, edge compute |
+| Backblaze B2 | $0.006/GB/mo | $0.01/GB | Lowest absolute cost |
+| Wasabi | $6.99/TB/mo | Free | Predictable pricing |
+| AWS S3 | $0.023/GB/mo | $0.09/GB | Ecosystem, features |
+
+### When to Consider Alternatives
+
+S3-compatible alternatives make sense when:
+
+- **Egress costs dominate**: For model serving or data distribution, free egress from R2 or Wasabi can reduce costs by 90%+
+- **Large archival datasets**: Backblaze B2 at $6/TB is 74% cheaper than S3 Standard
+- **Budget constraints**: Alternative providers can reduce storage costs by 50-75%
+- **Simple workloads**: When advanced features (S3 Select, Glacier, storage classes) are not required
+
+### Limitations to Consider
+
+Alternative providers lack some enterprise features:
+
+- No storage classes or archival tiers
+- No S3 Select (query within objects)
+- Fewer regions and edge locations
+- Limited or no integration with cloud ML services
+- Reduced compliance certifications
+
+### Recommended Hybrid Approach
+
+Many organizations use a tiered strategy:
+
+1. **Active training data**: Primary cloud storage (S3/GCS/Azure) for tight ML service integration
+2. **Archives and backups**: Backblaze B2 for lowest cost
+3. **Model distribution**: Cloudflare R2 for free egress
+4. **Long-term storage**: Wasabi for predictable costs
+
+This approach optimizes cost while maintaining access to cloud-native features where they matter most.
+
 ## Conclusion
 
 Object storage is the backbone of ML data infrastructure. Its combination of unlimited scale, extreme durability, and cost efficiency makes it the default choice for training data, model artifacts, and feature storage.
@@ -549,4 +592,6 @@ The three major providersS3, GCS, and Azure Bloboffer similar core capabilitie
 - **GCS**: Hierarchical Namespace for checkpointing and instant archive access
 - **Azure**: In-account tiering and Premium multi-AZ storage
 
-Choose based on your existing cloud platform first, then optimize for your specific workload characteristics. Regardless of provider, the fundamental principles apply: parallelize access, consolidate small files, automate lifecycle management, and always co-locate storage with compute.
+S3-compatible alternatives (Cloudflare R2, Backblaze B2, Wasabi) offer significant cost savings for appropriate workloads, particularly those with high egress or large archival needs.
+
+Choose based on your existing cloud platform first, then optimize for your specific workload characteristics. For cost-sensitive workloads, evaluate S3 alternatives as part of a hybrid storage strategy. Regardless of provider, the fundamental principles apply: parallelize access, consolidate small files, automate lifecycle management, and always co-locate storage with compute.

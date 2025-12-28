@@ -8,6 +8,10 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - [S3](data/storage/object-storage/s3/ReadMe.md)
         - [GCS](data/storage/object-storage/gcs/ReadMe.md)
         - [Azure Blob](data/storage/object-storage/azure-blob/ReadMe.md)
+        - [S3 Alternatives](data/storage/object-storage/s3-alternatives/ReadMe.md)
+            - [Cloudflare R2](data/storage/object-storage/s3-alternatives/cloudflare-r2/ReadMe.md)
+            - [Backblaze B2](data/storage/object-storage/s3-alternatives/backblaze-b2/ReadMe.md)
+            - [Wasabi](data/storage/object-storage/s3-alternatives/wasabi/ReadMe.md)
     - Data Lakes
         - Delta Lake
         - Apache Hudi
@@ -26,17 +30,17 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - Tecton
         - Hopsworks
 - Formats
-    - Image
-        - base64
-        - JPEG
-        - PNG
-        - WebP
-        - TIFF
-    - Video
-        - H.264
-        - H.265 (HEVC)
-        - VP9
-        - AV1
+    - [Image](data/formats/image/ReadMe.md)
+        - [Base64](data/formats/image/base64/ReadMe.md)
+        - [JPEG](data/formats/image/jpeg/ReadMe.md)
+        - [PNG](data/formats/image/png/ReadMe.md)
+        - [WebP](data/formats/image/webp/ReadMe.md)
+        - [TIFF](data/formats/image/tiff/ReadMe.md)
+    - [Video](data/formats/video/ReadMe.md)
+        - [H.264](data/formats/video/h264/ReadMe.md)
+        - [H.265 (HEVC)](data/formats/video/h265-hevc/ReadMe.md)
+        - [VP9](data/formats/video/vp9/ReadMe.md)
+        - [AV1](data/formats/video/av1/ReadMe.md)
     - Text
         - JSON
         - JSONL
@@ -193,6 +197,7 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - Tree of Thought
         - ReAct
     - Agents
+        - Design Patterns
         - Tool Use
         - Planning
         - Memory Systems
