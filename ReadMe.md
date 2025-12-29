@@ -2,8 +2,8 @@
 After years of trying to organize my learning in notebooks, flashcards and my increasingly porous brain, this repo is an attempt to build something lasting. Pull requests welcome. 
 
 
-## Data
-- Storage
+## [Data](data/ReadMe.md)
+- [Storage](data/storage/ReadMe.md)
     - [Object Storage](data/storage/object-storage/ReadMe.md)
         - [S3](data/storage/object-storage/s3/ReadMe.md)
         - [GCS](data/storage/object-storage/gcs/ReadMe.md)
@@ -35,7 +35,7 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - [Feast](data/storage/feature-stores/feast/ReadMe.md)
         - [Tecton](data/storage/feature-stores/tecton/ReadMe.md)
         - [Hopsworks](data/storage/feature-stores/hopsworks/ReadMe.md)
-- Formats
+- [Formats](data/formats/ReadMe.md)
     - [Image](data/formats/image/ReadMe.md)
         - [Base64](data/formats/image/base64/ReadMe.md)
         - [JPEG](data/formats/image/jpeg/ReadMe.md)
@@ -62,23 +62,23 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - [Safetensors](data/formats/ml-specific/safetensors/ReadMe.md)
         - [ONNX](data/formats/ml-specific/onnx/ReadMe.md)
         - [HDF5](data/formats/ml-specific/hdf5/ReadMe.md)
-- Processing
-    - Batch
+- [Processing](data/processing/ReadMe.md)
+    - [Batch](data/processing/batch/ReadMe.md)
         - Apache Spark
         - Dask
         - Ray Data
-    - Streaming
-        - Apache Kafka
-        - Apache Flink
-        - Spark Streaming
-    - ETL/ELT
+    - [Streaming](data/processing/streaming/ReadMe.md)
+        - [Apache Kafka](data/processing/streaming/apache-kafka/ReadMe.md)
+        - [Apache Flink](data/processing/streaming/apache-flink/ReadMe.md)
+        - [Spark Streaming](data/processing/streaming/spark-streaming/ReadMe.md)
+    - [ETL/ELT](data/processing/etl-elt/ReadMe.md)
         - dbt
         - Airbyte
         - Fivetran
-- Versioning
-    - DVC
-    - LakeFS
-    - Delta Lake Time Travel
+- [Versioning](data/versioning/ReadMe.md)
+    - [DVC](data/versioning/dvc/ReadMe.md)
+    - [LakeFS](data/versioning/lakefs/ReadMe.md)
+    - [Delta Lake Time Travel](data/versioning/delta-lake-time-travel/ReadMe.md)
 
 
 ## Modeling
