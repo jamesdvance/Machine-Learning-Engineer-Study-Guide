@@ -12,23 +12,29 @@ After years of trying to organize my learning in notebooks, flashcards and my in
             - [Cloudflare R2](data/storage/object-storage/s3-alternatives/cloudflare-r2/ReadMe.md)
             - [Backblaze B2](data/storage/object-storage/s3-alternatives/backblaze-b2/ReadMe.md)
             - [Wasabi](data/storage/object-storage/s3-alternatives/wasabi/ReadMe.md)
-    - Data Lakes
-        - Delta Lake
-        - Apache Hudi
-    - Data Warehouses
-        - Snowflake
-        - BigQuery
-        - Redshift
-    - Vector Databases
-        - Pinecone
-        - Milvus
-        - Weaviate
-        - Qdrant
-        - Chroma
-    - Feature Stores
-        - Feast
-        - Tecton
-        - Hopsworks
+        - [Self-Hosting Object Stores](data/storage/object-storage/self-hosting-object-stores/ReadMe.md)
+            - [MinIO](data/storage/object-storage/self-hosting-object-stores/mini-io/ReadMe.md)
+            - [SeaweedFS](data/storage/object-storage/self-hosting-object-stores/seaweedfs/ReadMe.md)
+            - [Ceph](data/storage/object-storage/self-hosting-object-stores/ceph/ReadMe.md)
+            - [Garage](data/storage/object-storage/self-hosting-object-stores/garage/ReadMe.md)
+            - [OpenIO](data/storage/object-storage/self-hosting-object-stores/openio/ReadMe.md)
+    - [Data Lakes](data/storage/data-lakes/ReadMe.md)
+        - [Delta Lake](data/storage/data-lakes/delta-lake/ReadMe.md)
+        - [Apache Hudi](data/storage/data-lakes/apache-hudi/ReadMe.md)
+    - [Data Warehouses](data/storage/data-warehouses/ReadMe.md)
+        - [Snowflake](data/storage/data-warehouses/snowflake/ReadMe.md)
+        - [BigQuery](data/storage/data-warehouses/bigquery/ReadMe.md)
+        - [Redshift](data/storage/data-warehouses/redshift/ReadMe.md)
+    - [Vector Databases](data/storage/vector-databases/ReadMe.md)
+        - [Pinecone](data/storage/vector-databases/pinecone/ReadMe.md)
+        - [Milvus](data/storage/vector-databases/milvus/ReadMe.md)
+        - [Weaviate](data/storage/vector-databases/weaviate/ReadMe.md)
+        - [Qdrant](data/storage/vector-databases/qdrant/ReadMe.md)
+        - [Chroma](data/storage/vector-databases/chroma/ReadMe.md)
+    - [Feature Stores](data/storage/feature-stores/ReadMe.md)
+        - [Feast](data/storage/feature-stores/feast/ReadMe.md)
+        - [Tecton](data/storage/feature-stores/tecton/ReadMe.md)
+        - [Hopsworks](data/storage/feature-stores/hopsworks/ReadMe.md)
 - Formats
     - [Image](data/formats/image/ReadMe.md)
         - [Base64](data/formats/image/base64/ReadMe.md)
@@ -41,21 +47,21 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - [H.265 (HEVC)](data/formats/video/h265-hevc/ReadMe.md)
         - [VP9](data/formats/video/vp9/ReadMe.md)
         - [AV1](data/formats/video/av1/ReadMe.md)
-    - Text
-        - JSON
-        - JSONL
-        - XML
-        - CSV
-    - Tabular
-        - Iceberg
-        - Parquet
-        - ORC
-        - Avro
-    - ML-Specific
-        - TFRecord
-        - Safetensors
-        - ONNX
-        - HDF5
+    - [Text](data/formats/text/ReadMe.md)
+        - [JSON](data/formats/text/json/ReadMe.md)
+        - [JSONL](data/formats/text/jsonl/ReadMe.md)
+        - [XML](data/formats/text/xml/ReadMe.md)
+        - [CSV](data/formats/text/csv/ReadMe.md)
+    - [Tabular](data/formats/tabular/ReadMe.md)
+        - [Iceberg](data/formats/tabular/iceberg/ReadMe.md)
+        - [Parquet](data/formats/tabular/parquet/ReadMe.md)
+        - [ORC](data/formats/tabular/orc/ReadMe.md)
+        - [Avro](data/formats/tabular/avro/ReadMe.md)
+    - [ML-Specific](data/formats/ml-specific/ReadMe.md)
+        - [TFRecord](data/formats/ml-specific/tfrecord/ReadMe.md)
+        - [Safetensors](data/formats/ml-specific/safetensors/ReadMe.md)
+        - [ONNX](data/formats/ml-specific/onnx/ReadMe.md)
+        - [HDF5](data/formats/ml-specific/hdf5/ReadMe.md)
 - Processing
     - Batch
         - Apache Spark
