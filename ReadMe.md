@@ -82,21 +82,21 @@ After years of trying to organize my learning in notebooks, flashcards and my in
 
 
 ## Modeling
-- Forecasting
-    - Classical Methods
-        - ARIMA
-        - Exponential Smoothing
-        - Prophet
-    - Deep Learning Methods
-        - Temporal Fusion Transformers
-        - N-BEATS
-        - DeepAR
-        - TimesNet
-    - Concepts
-        - Stationarity
-        - Seasonality
-        - Trend Decomposition
-        - Cross-Validation for Time Series
+- [Forecasting](modeling/forecasting/ReadMe.md)
+    - [Classical Methods](modeling/forecasting/classical-methods/ReadMe.md)
+        - [ARIMA](modeling/forecasting/classical-methods/arima/ReadMe.md)
+        - [Exponential Smoothing](modeling/forecasting/classical-methods/exponential-smoothing/ReadMe.md)
+        - [Prophet](modeling/forecasting/classical-methods/prophet/ReadMe.md)
+    - [Deep Learning Methods](modeling/forecasting/deep-learning-methods/ReadMe.md)
+        - [Temporal Fusion Transformers](modeling/forecasting/deep-learning-methods/temporal-fusion-transformers/ReadMe.md)
+        - [N-BEATS](modeling/forecasting/deep-learning-methods/n-beats/ReadMe.md)
+        - [DeepAR](modeling/forecasting/deep-learning-methods/deepar/ReadMe.md)
+        - [TimesNet](modeling/forecasting/deep-learning-methods/timesnet/ReadMe.md)
+    - [Concepts](modeling/forecasting/concepts/ReadMe.md)
+        - [Stationarity](modeling/forecasting/concepts/stationarity/ReadMe.md)
+        - [Seasonality](modeling/forecasting/concepts/seasonality/ReadMe.md)
+        - [Trend Decomposition](modeling/forecasting/concepts/trend-decomposition/ReadMe.md)
+        - [Cross-Validation for Time Series](modeling/forecasting/concepts/cross-validation-for-time-series/ReadMe.md)
 - Recommendation
     - Collaborative Filtering
         - Matrix Factorization
