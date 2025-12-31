@@ -156,57 +156,60 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - Masked Image Modeling
             - MAE
             - BEiT
-- LLMs
-    - Architectures
-        - Decoder-Only
-            - GPT
-            - LLaMA
-            - Mistral
-        - Encoder-Decoder
-            - T5
-            - BART
-    - Training
-        - Pretraining
-            - Causal Language Modeling
-            - Masked Language Modeling
-        - Fine-Tuning
-            - Full Fine-Tuning
-            - LoRA
-            - QLoRA
-            - Prefix Tuning
-            - Prompt Tuning
-        - Alignment
-            - RLHF
-            - DPO
-            - Constitutional AI
-    - Inference Optimization
-        - Quantization
-            - INT8
-            - INT4
-            - GPTQ
-            - AWQ
-        - KV Cache
-        - Speculative Decoding
-        - Continuous Batching
-    - Context Management
-        - RAG
-            - Chunking Strategies
-            - Retrieval Methods
-            - Reranking
-        - Long Context
-            - RoPE Scaling
-            - Sliding Window Attention
-    - Prompting
-        - Zero-Shot
-        - Few-Shot
-        - Chain of Thought
-        - Tree of Thought
-        - ReAct
-    - Agents
-        - Design Patterns
-        - Tool Use
-        - Planning
-        - Memory Systems
+- [LLMs](modeling/llms/ReadMe.md)
+    - [Architectures](modeling/llms/architectures/ReadMe.md)
+        - [Decoder-Only](modeling/llms/architectures/decoder-only/ReadMe.md)
+            - [GPT](modeling/llms/architectures/decoder-only/gpt/ReadMe.md)
+            - [LLaMA](modeling/llms/architectures/decoder-only/llama/ReadMe.md)
+            - [Mistral](modeling/llms/architectures/decoder-only/mistral/ReadMe.md)
+        - [Encoder-Decoder](modeling/llms/architectures/encoder-decoder/ReadMe.md)
+            - [T5](modeling/llms/architectures/encoder-decoder/t5/ReadMe.md)
+            - [BART](modeling/llms/architectures/encoder-decoder/bart/ReadMe.md)
+    - [Training](modeling/llms/training/ReadMe.md)
+        - [Pretraining](modeling/llms/training/pretraining/ReadMe.md)
+            - [Causal Language Modeling](modeling/llms/training/pretraining/causal-language-modeling/ReadMe.md)
+            - [Masked Language Modeling](modeling/llms/training/pretraining/masked-language-modeling/ReadMe.md)
+        - [Fine-Tuning](modeling/llms/training/fine-tuning/ReadMe.md)
+            - [Full Fine-Tuning](modeling/llms/training/fine-tuning/full-fine-tuning/ReadMe.md)
+            - [LoRA](modeling/llms/training/fine-tuning/lora/ReadMe.md)
+            - [QLoRA](modeling/llms/training/fine-tuning/qlora/ReadMe.md)
+            - [Prefix Tuning](modeling/llms/training/fine-tuning/prefix-tuning/ReadMe.md)
+            - [Prompt Tuning](modeling/llms/training/fine-tuning/prompt-tuning/ReadMe.md)
+        - [Alignment](modeling/llms/training/alignment/ReadMe.md)
+            - [RLHF](modeling/llms/training/alignment/rlhf/ReadMe.md)
+            - [DPO](modeling/llms/training/alignment/dpo/ReadMe.md)
+            - [Constitutional AI](modeling/llms/training/alignment/constitutional-ai/ReadMe.md)
+    - [Inference Optimization](modeling/llms/inference-optimization/ReadMe.md)
+        - [Quantization](modeling/llms/inference-optimization/quantization/ReadMe.md)
+            - [INT8](modeling/llms/inference-optimization/quantization/int8/ReadMe.md)
+            - [INT4](modeling/llms/inference-optimization/quantization/int4/ReadMe.md)
+            - [GPTQ](modeling/llms/inference-optimization/quantization/gptq/ReadMe.md)
+            - [AWQ](modeling/llms/inference-optimization/quantization/awq/ReadMe.md)
+        - [KV Cache](modeling/llms/inference-optimization/kv-cache/ReadMe.md)
+        - [Speculative Decoding](modeling/llms/inference-optimization/speculative-decoding/ReadMe.md)
+        - [Continuous Batching](modeling/llms/inference-optimization/continuous-batching/ReadMe.md)
+    - [Context Management](modeling/llms/context-management/ReadMe.md)
+        - [RAG](modeling/llms/context-management/rag/ReadMe.md)
+            - [Chunking Strategies](modeling/llms/context-management/rag/chunking-strategies/ReadMe.md)
+            - [Retrieval Methods](modeling/llms/context-management/rag/retrieval-methods/ReadMe.md)
+            - [Reranking](modeling/llms/context-management/rag/reranking/ReadMe.md)
+        - [Long Context](modeling/llms/context-management/long-context/ReadMe.md)
+            - [RoPE Scaling](modeling/llms/context-management/long-context/rope-scaling/ReadMe.md)
+            - [Sliding Window Attention](modeling/llms/context-management/long-context/sliding-window-attention/ReadMe.md)
+    - [Prompting](modeling/llms/prompting/ReadMe.md)
+        - [Zero-Shot](modeling/llms/prompting/zero-shot/ReadMe.md)
+        - [Few-Shot](modeling/llms/prompting/few-shot/ReadMe.md)
+        - [Chain of Thought](modeling/llms/prompting/chain-of-thought/ReadMe.md)
+        - [Tree of Thought](modeling/llms/prompting/tree-of-thought/ReadMe.md)
+        - [ReAct](modeling/llms/prompting/react/ReadMe.md)
+    - [Agents](modeling/llms/agents/ReadMe.md)
+        - [Design Patterns](modeling/llms/agents/design-patterns/ReadMe.md)
+        - [Tool Use](modeling/llms/agents/tool-use/ReadMe.md)
+        - [Planning](modeling/llms/agents/planning/ReadMe.md)
+        - [Memory Systems](modeling/llms/agents/memory-systems/ReadMe.md)
+    - [Frameworks](modeling/llms/frameworks/ReadMe.md)
+        - [LangGraph](modeling/llms/frameworks/langgraph/ReadMe.md)
+        - [Strands](modeling/llms/frameworks/strands/ReadMe.md)
 - VLMs
     - Architectures
         - CLIP
