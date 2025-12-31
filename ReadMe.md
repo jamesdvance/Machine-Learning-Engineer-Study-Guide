@@ -223,31 +223,31 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - Document Understanding
         - OCR
 - NLP
-    - Text Classification
-        - Sentiment Analysis
-        - Intent Classification
-        - Topic Modeling
-    - Named Entity Recognition
-        - SpaCy
-        - Flair
-        - Transformer-Based NER
-    - Text Embedding
-        - Word2Vec
-        - GloVe
-        - Sentence Transformers
-        - OpenAI Embeddings
-    - Information Extraction
-        - Relation Extraction
-        - Event Extraction
-    - Question Answering
-        - Extractive QA
-        - Generative QA
-    - Summarization
-        - Extractive
-        - Abstractive
-    - Machine Translation
-        - Sequence-to-Sequence
-        - Transformer Models
+    - [Text Classification](modeling/nlp/text-classification/ReadMe.md)
+        - [Sentiment Analysis](modeling/nlp/text-classification/sentiment-analysis/ReadMe.md)
+        - [Intent Classification](modeling/nlp/text-classification/intent-classification/ReadMe.md)
+        - [Topic Modeling](modeling/nlp/text-classification/topic-modeling/ReadMe.md)
+    - [Named Entity Recognition](modeling/nlp/named-entity-recognition/ReadMe.md)
+        - [SpaCy](modeling/nlp/named-entity-recognition/spacy/ReadMe.md)
+        - [Flair](modeling/nlp/named-entity-recognition/flair/ReadMe.md)
+        - [Transformer-Based NER](modeling/nlp/named-entity-recognition/transformer-based-ner/ReadMe.md)
+    - [Text Embedding](modeling/nlp/text-embedding/ReadMe.md)
+        - [Word2Vec](modeling/nlp/text-embedding/word2vec/ReadMe.md)
+        - [GloVe](modeling/nlp/text-embedding/glove/ReadMe.md)
+        - [Sentence Transformers](modeling/nlp/text-embedding/sentence-transformers/ReadMe.md)
+        - [OpenAI Embeddings](modeling/nlp/text-embedding/openai-embeddings/ReadMe.md)
+    - [Information Extraction](modeling/nlp/information-extraction/ReadMe.md)
+        - [Relation Extraction](modeling/nlp/information-extraction/relation-extraction/ReadMe.md)
+        - [Event Extraction](modeling/nlp/information-extraction/event-extraction/ReadMe.md)
+    - [Question Answering](modeling/nlp/question-answering/ReadMe.md)
+        - [Extractive QA](modeling/nlp/question-answering/extractive-qa/ReadMe.md)
+        - [Generative QA](modeling/nlp/question-answering/generative-qa/ReadMe.md)
+    - [Summarization](modeling/nlp/summarization/ReadMe.md)
+        - [Extractive](modeling/nlp/summarization/extractive/ReadMe.md)
+        - [Abstractive](modeling/nlp/summarization/abstractive/ReadMe.md)
+    - [Machine Translation](modeling/nlp/machine-translation/ReadMe.md)
+        - [Sequence-to-Sequence](modeling/nlp/machine-translation/sequence-to-sequence/ReadMe.md)
+        - [Transformer Models](modeling/nlp/machine-translation/transformer-models/ReadMe.md)
 - Tabular
     - Gradient Boosting
         - XGBoost

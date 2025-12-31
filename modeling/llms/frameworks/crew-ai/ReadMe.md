@@ -529,6 +529,44 @@ Consider alternatives when:
 - Minimal boilerplate is priority (Strands)
 - Workflows are highly dynamic rather than role-based
 
+## Enterprise Integrations
+
+CrewAI provides triggers for automating crew execution from external events:
+
+- Email platforms: Gmail, Outlook
+- File storage: Google Drive, OneDrive
+- Communication: Microsoft Teams
+- CRM: HubSpot
+- Webhooks for custom integrations
+
+```python
+# Crews can be triggered by external events
+# Configure via CrewAI Enterprise dashboard or API
+trigger_config = {
+    "source": "gmail",
+    "filter": "subject:urgent",
+    "crew": "support_crew"
+}
+```
+
+The platform also supports calling external AI systems:
+
+```python
+from crewai_tools import BedrockAgentTool
+
+# Call Amazon Bedrock agents from within crews
+bedrock_tool = BedrockAgentTool(
+    agent_id="your-bedrock-agent-id",
+    agent_alias_id="your-alias-id"
+)
+
+agent = Agent(
+    role="Coordinator",
+    tools=[bedrock_tool],
+    ...
+)
+```
+
 ## Production Considerations
 
 ### Observability

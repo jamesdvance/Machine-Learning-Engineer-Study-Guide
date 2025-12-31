@@ -422,6 +422,27 @@ for event in agent.stream("Tell me a story"):
         print(f"[Result: {event.result}]")
 ```
 
+### Bidirectional Streaming (Experimental)
+
+Strands supports bidirectional streaming with real-time voice models:
+
+```python
+from strands import Agent
+from strands.models import NovaSonicModel, GeminiLiveModel, OpenAIRealtimeModel
+
+# Amazon Nova Sonic for voice interactions
+voice_agent = Agent(
+    model=NovaSonicModel(),
+    tools=[...],
+    streaming=True
+)
+
+# Enables real-time voice input/output with tool calling
+# Supports interrupt handling and turn-taking
+```
+
+This experimental feature enables building voice-first agents with models like Amazon Nova Sonic, Google Gemini Live, and OpenAI Realtime. The bidirectional streaming allows simultaneous audio input and output with support for interruptions.
+
 ## Guardrails and Safety
 
 ### Input Validation
