@@ -64,17 +64,17 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - [HDF5](data/formats/ml-specific/hdf5/ReadMe.md)
 - [Processing](data/processing/ReadMe.md)
     - [Batch](data/processing/batch/ReadMe.md)
-        - Apache Spark
-        - Dask
-        - Ray Data
+        - [Apache Spark](data/processing/batch/apache-spark/ReadMe.md)
+        - [Dask](data/processing/batch/dask/ReadMe.md)
+        - [Ray Data](data/processing/batch/ray-data/ReadMe.md)
     - [Streaming](data/processing/streaming/ReadMe.md)
         - [Apache Kafka](data/processing/streaming/apache-kafka/ReadMe.md)
         - [Apache Flink](data/processing/streaming/apache-flink/ReadMe.md)
         - [Spark Streaming](data/processing/streaming/spark-streaming/ReadMe.md)
     - [ETL/ELT](data/processing/etl-elt/ReadMe.md)
-        - dbt
-        - Airbyte
-        - Fivetran
+        - [dbt](data/processing/etl-elt/dbt/ReadMe.md)
+        - [Airbyte](data/processing/etl-elt/airbyte/ReadMe.md)
+        - [Fivetran](data/processing/etl-elt/fivetran/ReadMe.md)
 - [Versioning](data/versioning/ReadMe.md)
     - [DVC](data/versioning/dvc/ReadMe.md)
     - [LakeFS](data/versioning/lakefs/ReadMe.md)
@@ -97,65 +97,62 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - [Seasonality](modeling/forecasting/concepts/seasonality/ReadMe.md)
         - [Trend Decomposition](modeling/forecasting/concepts/trend-decomposition/ReadMe.md)
         - [Cross-Validation for Time Series](modeling/forecasting/concepts/cross-validation-for-time-series/ReadMe.md)
-- Recommendation
-    - Collaborative Filtering
-        - Matrix Factorization
-        - Alternating Least Squares
-        - Neural Collaborative Filtering
-    - Content-Based Filtering
-    - Hybrid Methods
-    - Two-Tower Models
-    - Sequential Recommendation
-        - Transformers4Rec
-        - SASRec
-    - Retrieval and Ranking
-        - Approximate Nearest Neighbors
-        - FAISS
-        - ScaNN
-- Vision
-    - Classification
-        - CNNs
-            - ResNet
-            - EfficientNet
-            - ConvNeXt
-        - Vision Transformers
-            - ViT
-            - Swin Transformer
-            - DeiT
-    - Object Detection
-        - Two-Stage Detectors
-            - Faster R-CNN
-            - Mask R-CNN
-        - One-Stage Detectors
-            - YOLO
-            - SSD
-            - RetinaNet
-        - Transformer-Based
-            - DETR
-            - DINO
-    - Segmentation
-        - Semantic Segmentation
-            - U-Net
-            - DeepLab
-        - Instance Segmentation
-            - Mask R-CNN
-        - Panoptic Segmentation
-    - Generative
-        - GANs
-            - StyleGAN
-            - CycleGAN
-        - Diffusion Models
-            - Stable Diffusion
-            - DALL-E
-            - Imagen
-        - VAEs
-    - Self-Supervised Learning
-        - Contrastive Learning
-            - SimCLR
-            - MoCo
-        - Masked Image Modeling
-            - MAE
-            - BEiT
+- [Recommendation](modeling/recommendation/ReadMe.md)
+    - [Collaborative Filtering](modeling/recommendation/collaborative-filtering/ReadMe.md)
+        - [Matrix Factorization](modeling/recommendation/collaborative-filtering/matrix-factorization/ReadMe.md)
+        - [Alternating Least Squares](modeling/recommendation/collaborative-filtering/alternating-least-squares/ReadMe.md)
+        - [Neural Collaborative Filtering](modeling/recommendation/collaborative-filtering/neural-collaborative-filtering/ReadMe.md)
+    - [Content-Based Filtering](modeling/recommendation/content-based-filtering/ReadMe.md)
+    - [Hybrid Methods](modeling/recommendation/hybrid-methods/ReadMe.md)
+    - [Two-Tower Models](modeling/recommendation/two-tower-models/ReadMe.md)
+    - [Sequential Recommendation](modeling/recommendation/sequential-recommendation/ReadMe.md)
+        - [Transformers4Rec](modeling/recommendation/sequential-recommendation/transformers4rec/ReadMe.md)
+        - [SASRec](modeling/recommendation/sequential-recommendation/sasrec/ReadMe.md)
+    - [Retrieval and Ranking](modeling/recommendation/retrieval-and-ranking/ReadMe.md)
+        - [Approximate Nearest Neighbors](modeling/recommendation/retrieval-and-ranking/approximate-nearest-neighbors/ReadMe.md)
+        - [FAISS](modeling/recommendation/retrieval-and-ranking/faiss/ReadMe.md)
+        - [ScaNN](modeling/recommendation/retrieval-and-ranking/scann/ReadMe.md)
+- [Vision](modeling/vision/ReadMe.md)
+    - [Classification](modeling/vision/classification/ReadMe.md)
+        - [CNNs](modeling/vision/classification/cnns/ReadMe.md)
+            - [ResNet](modeling/vision/classification/cnns/resnet/ReadMe.md)
+            - [EfficientNet](modeling/vision/classification/cnns/efficientnet/ReadMe.md)
+            - [ConvNeXt](modeling/vision/classification/cnns/convnext/ReadMe.md)
+        - [Vision Transformers](modeling/vision/classification/vision-transformers/ReadMe.md)
+            - [ViT](modeling/vision/classification/vision-transformers/vit/ReadMe.md)
+            - [Swin Transformer](modeling/vision/classification/vision-transformers/swin-transformer/ReadMe.md)
+            - [DeiT](modeling/vision/classification/vision-transformers/deit/ReadMe.md)
+    - [Object Detection](modeling/vision/object-detection/ReadMe.md)
+        - [Two-Stage Detectors](modeling/vision/object-detection/two-stage-detectors/ReadMe.md)
+            - [Faster R-CNN](modeling/vision/object-detection/two-stage-detectors/faster-rcnn/ReadMe.md)
+        - [One-Stage Detectors](modeling/vision/object-detection/one-stage-detectors/ReadMe.md)
+            - [YOLO](modeling/vision/object-detection/one-stage-detectors/yolo/ReadMe.md)
+            - [RetinaNet](modeling/vision/object-detection/one-stage-detectors/retinanet/ReadMe.md)
+        - [Transformer-Based](modeling/vision/object-detection/transformer-based/ReadMe.md)
+            - [DETR](modeling/vision/object-detection/transformer-based/detr/ReadMe.md)
+            - [DINO](modeling/vision/object-detection/transformer-based/dino/ReadMe.md)
+    - [Segmentation](modeling/vision/segmentation/ReadMe.md)
+        - [Semantic Segmentation](modeling/vision/segmentation/semantic-segmentation/ReadMe.md)
+            - [U-Net](modeling/vision/segmentation/semantic-segmentation/u-net/ReadMe.md)
+            - [DeepLab](modeling/vision/segmentation/semantic-segmentation/deeplab/ReadMe.md)
+        - [Instance Segmentation](modeling/vision/segmentation/instance-segmentation/ReadMe.md)
+        - [Panoptic Segmentation](modeling/vision/segmentation/panoptic-segmentation/ReadMe.md)
+    - [Generative](modeling/vision/generative/ReadMe.md)
+        - [GANs](modeling/vision/generative/gans/ReadMe.md)
+            - [StyleGAN](modeling/vision/generative/gans/stylegan/ReadMe.md)
+            - [CycleGAN](modeling/vision/generative/gans/cyclegan/ReadMe.md)
+        - [Diffusion Models](modeling/vision/generative/diffusion-models/ReadMe.md)
+            - [Stable Diffusion](modeling/vision/generative/diffusion-models/stable-diffusion/ReadMe.md)
+            - [DALL-E](modeling/vision/generative/diffusion-models/dall-e/ReadMe.md)
+            - [Imagen](modeling/vision/generative/diffusion-models/imagen/ReadMe.md)
+        - [VAEs](modeling/vision/generative/vaes/ReadMe.md)
+    - [Self-Supervised Learning](modeling/vision/self-supervised-learning/ReadMe.md)
+        - [Contrastive Learning](modeling/vision/self-supervised-learning/contrastive-learning/ReadMe.md)
+            - [SimCLR](modeling/vision/self-supervised-learning/contrastive-learning/simclr/ReadMe.md)
+            - [MoCo](modeling/vision/self-supervised-learning/contrastive-learning/moco/ReadMe.md)
+        - [Masked Image Modeling](modeling/vision/self-supervised-learning/masked-image-modeling/ReadMe.md)
+            - [MAE](modeling/vision/self-supervised-learning/masked-image-modeling/mae/ReadMe.md)
+            - [BEiT](modeling/vision/self-supervised-learning/masked-image-modeling/beit/ReadMe.md)
 - [LLMs](modeling/llms/ReadMe.md)
     - [Architectures](modeling/llms/architectures/ReadMe.md)
         - [Decoder-Only](modeling/llms/architectures/decoder-only/ReadMe.md)
