@@ -207,18 +207,18 @@ After years of trying to organize my learning in notebooks, flashcards and my in
     - [Frameworks](modeling/llms/frameworks/ReadMe.md)
         - [LangGraph](modeling/llms/frameworks/langgraph/ReadMe.md)
         - [Strands](modeling/llms/frameworks/strands/ReadMe.md)
-- VLMs
-    - Architectures
-        - CLIP
-        - LLaVA
-        - Flamingo
-        - GPT-4V
-        - Gemini
-    - Tasks
-        - Image Captioning
-        - Visual Question Answering
-        - Document Understanding
-        - OCR
+- [VLMs](modeling/vlms/ReadMe.md)
+    - [Architectures](modeling/vlms/architectures/ReadMe.md)
+        - [CLIP](modeling/vlms/architectures/clip/ReadMe.md)
+        - [LLaVA](modeling/vlms/architectures/llava/ReadMe.md)
+        - [Flamingo](modeling/vlms/architectures/flamingo/ReadMe.md)
+        - [GPT-4V](modeling/vlms/architectures/gpt-4v/ReadMe.md)
+        - [Gemini](modeling/vlms/architectures/gemini/ReadMe.md)
+    - [Tasks](modeling/vlms/tasks/ReadMe.md)
+        - [Image Captioning](modeling/vlms/tasks/image-captioning/ReadMe.md)
+        - [Visual Question Answering](modeling/vlms/tasks/visual-question-answering/ReadMe.md)
+        - [Document Understanding](modeling/vlms/tasks/document-understanding/ReadMe.md)
+        - [OCR](modeling/vlms/tasks/ocr/ReadMe.md)
 - NLP
     - [Text Classification](modeling/nlp/text-classification/ReadMe.md)
         - [Sentiment Analysis](modeling/nlp/text-classification/sentiment-analysis/ReadMe.md)
