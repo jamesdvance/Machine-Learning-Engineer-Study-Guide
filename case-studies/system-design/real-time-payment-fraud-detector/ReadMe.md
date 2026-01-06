@@ -57,4 +57,9 @@ We can use Sagemaker endpoints to handle distributed serving. Sagemaker endpoint
 For server performane monitoring, we can use built-in cloud tools like Cloudwatch until we run into capabilities they don't have. Later, New Relic or similar more robust solutions could be used. Likewise for logging we could utilize Cloudwatch logs. However, payments data being so sensitive, it would be advised to enable AWS Customer-Managed KMS keys. 
 
 
-#### Training Orchestration and Model CICD - Low Level Design
+#### Training Orchestration- Low Level Design
+Fraud models may vary from tree-based models to graph neural networks or attention-based neural networks. While tree-based models best fit our SLA requirements, we want to create an environment that enables the best models for our use case to be deployed and meet the SLA. Based on the fact we process 10k payments / second, we can assume our training data size could be 10,000 * ~100000 = 1,000,000,000 records per day. If we want to train over the past month, we quickly get to 3B records in the training set. 
+
+
+
+#### Model Testing & CICD

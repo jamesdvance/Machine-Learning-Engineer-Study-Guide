@@ -493,77 +493,77 @@ After years of trying to organize my learning in notebooks, flashcards and my in
     - Lazy Evaluation
 
 
-## Training
-- Distributed Training
-    - Concepts
-        - Data Parallelism
-        - Model Parallelism
-        - Tensor Parallelism
-        - Pipeline Parallelism
-        - FSDP (Fully Sharded Data Parallel)
-        - ZeRO Optimization
-        - Gradient Accumulation
-        - All-Reduce
-        - Ring-AllReduce
-    - Frameworks
-        - PyTorch Distributed
-        - Horovod
-        - DeepSpeed
-        - Megatron-LM
-        - Ray Train
-        - ColossalAI
-    - Communication
-        - NCCL
-        - Gloo
-        - MPI
-- Performance
-    - Mixed Precision Training
-        - FP16
-        - BF16
-        - FP8
-    - Gradient Checkpointing
-    - Activation Checkpointing
-    - Compile Optimizations
-        - torch.compile
-        - XLA
-        - TensorRT
-    - Memory Optimization
-        - Gradient Accumulation
-        - Offloading
-        - Flash Attention
-- Frameworks
-    - PyTorch Lightning
-    - Hugging Face Accelerate
-    - Keras
-    - JAX/Flax
-    - TensorFlow
-- Observability
-    - Checkpointing
-        - State Dict Management
-        - Distributed Checkpointing
-        - Checkpoint Sharding
-    - Logging
-        - TensorBoard
-        - Weights & Biases
-        - MLflow Tracking
-    - Debugging
-        - Gradient Monitoring
-        - NaN Detection
-        - Memory Profiling
-- Cost Optimization
-    - Spot/Preemptible Instances
-    - Auto-scaling
-    - Right-sizing GPU Selection
-    - Training Budget Estimation
-    - Early Stopping
-    - Learning Rate Scheduling
-- Hyperparameter Optimization
-    - Grid Search
-    - Random Search
-    - Bayesian Optimization
-    - Optuna
-    - Ray Tune
-    - Population-Based Training
+## [Training](training/ReadMe.md)
+- [Distributed Training](training/distributed-training/ReadMe.md)
+    - [Concepts](training/distributed-training/concepts/ReadMe.md)
+        - [Data Parallelism](training/distributed-training/concepts/data-parallelism/ReadMe.md)
+        - [Model Parallelism](training/distributed-training/concepts/model-parallelism/ReadMe.md)
+        - [Tensor Parallelism](training/distributed-training/concepts/tensor-parallelism/ReadMe.md)
+        - [Pipeline Parallelism](training/distributed-training/concepts/pipeline-parallelism/ReadMe.md)
+        - [FSDP (Fully Sharded Data Parallel)](training/distributed-training/concepts/fsdp/ReadMe.md)
+        - [ZeRO Optimization](training/distributed-training/concepts/zero-optimization/ReadMe.md)
+        - [Gradient Accumulation](training/distributed-training/concepts/gradient-accumulation/ReadMe.md)
+        - [All-Reduce](training/distributed-training/concepts/all-reduce/ReadMe.md)
+        - [Ring-AllReduce](training/distributed-training/concepts/ring-allreduce/ReadMe.md)
+    - [Frameworks](training/distributed-training/frameworks/ReadMe.md)
+        - [PyTorch Distributed](training/distributed-training/frameworks/pytorch-distributed/ReadMe.md)
+        - [Horovod](training/distributed-training/frameworks/horovod/ReadMe.md)
+        - [DeepSpeed](training/distributed-training/frameworks/deepspeed/ReadMe.md)
+        - [Megatron-LM](training/distributed-training/frameworks/megatron-lm/ReadMe.md)
+        - [Ray Train](training/distributed-training/frameworks/ray-train/ReadMe.md)
+        - [ColossalAI](training/distributed-training/frameworks/colossalai/ReadMe.md)
+    - [Communication](training/distributed-training/communication/ReadMe.md)
+        - [NCCL](training/distributed-training/communication/nccl/ReadMe.md)
+        - [Gloo](training/distributed-training/communication/gloo/ReadMe.md)
+        - [MPI](training/distributed-training/communication/mpi/ReadMe.md)
+- [Performance](training/performance/ReadMe.md)
+    - [Mixed Precision Training](training/performance/mixed-precision-training/ReadMe.md)
+        - [FP16](training/performance/mixed-precision-training/fp16/ReadMe.md)
+        - [BF16](training/performance/mixed-precision-training/bf16/ReadMe.md)
+        - [FP8](training/performance/mixed-precision-training/fp8/ReadMe.md)
+    - [Gradient Checkpointing](training/performance/gradient-checkpointing/ReadMe.md)
+    - [Activation Checkpointing](training/performance/activation-checkpointing/ReadMe.md)
+    - [Compile Optimizations](training/performance/compile-optimizations/ReadMe.md)
+        - [torch.compile](training/performance/compile-optimizations/torch-compile/ReadMe.md)
+        - [XLA](training/performance/compile-optimizations/xla/ReadMe.md)
+        - [TensorRT](training/performance/compile-optimizations/tensorrt/ReadMe.md)
+    - [Memory Optimization](training/performance/memory-optimization/ReadMe.md)
+        - [Gradient Accumulation](training/performance/memory-optimization/gradient-accumulation/ReadMe.md)
+        - [Offloading](training/performance/memory-optimization/offloading/ReadMe.md)
+        - [Flash Attention](training/performance/memory-optimization/flash-attention/ReadMe.md)
+- [Frameworks](training/frameworks/ReadMe.md)
+    - [PyTorch Lightning](training/frameworks/pytorch-lightning/ReadMe.md)
+    - [Hugging Face Accelerate](training/frameworks/hugging-face-accelerate/ReadMe.md)
+    - [Keras](training/frameworks/keras/ReadMe.md)
+    - [JAX/Flax](training/frameworks/jax-flax/ReadMe.md)
+    - [TensorFlow](training/frameworks/tensorflow/ReadMe.md)
+- [Observability](training/observability/ReadMe.md)
+    - [Checkpointing](training/observability/checkpointing/ReadMe.md)
+        - [State Dict Management](training/observability/checkpointing/state-dict-management/ReadMe.md)
+        - [Distributed Checkpointing](training/observability/checkpointing/distributed-checkpointing/ReadMe.md)
+        - [Checkpoint Sharding](training/observability/checkpointing/checkpoint-sharding/ReadMe.md)
+    - [Logging](training/observability/logging/ReadMe.md)
+        - [TensorBoard](training/observability/logging/tensorboard/ReadMe.md)
+        - [Weights & Biases](training/observability/logging/weights-and-biases/ReadMe.md)
+        - [MLflow Tracking](training/observability/logging/mlflow-tracking/ReadMe.md)
+    - [Debugging](training/observability/debugging/ReadMe.md)
+        - [Gradient Monitoring](training/observability/debugging/gradient-monitoring/ReadMe.md)
+        - [NaN Detection](training/observability/debugging/nan-detection/ReadMe.md)
+        - [Memory Profiling](training/observability/debugging/memory-profiling/ReadMe.md)
+- [Cost Optimization](training/cost-optimization/ReadMe.md)
+    - [Spot/Preemptible Instances](training/cost-optimization/spot-preemptible-instances/ReadMe.md)
+    - [Auto-scaling](training/cost-optimization/auto-scaling/ReadMe.md)
+    - [Right-sizing GPU Selection](training/cost-optimization/right-sizing-gpu-selection/ReadMe.md)
+    - [Training Budget Estimation](training/cost-optimization/training-budget-estimation/ReadMe.md)
+    - [Early Stopping](training/cost-optimization/early-stopping/ReadMe.md)
+    - [Learning Rate Scheduling](training/cost-optimization/learning-rate-scheduling/ReadMe.md)
+- [Hyperparameter Optimization](training/hyperparameter-optimization/ReadMe.md)
+    - [Grid Search](training/hyperparameter-optimization/grid-search/ReadMe.md)
+    - [Random Search](training/hyperparameter-optimization/random-search/ReadMe.md)
+    - [Bayesian Optimization](training/hyperparameter-optimization/bayesian-optimization/ReadMe.md)
+    - [Optuna](training/hyperparameter-optimization/optuna/ReadMe.md)
+    - [Ray Tune](training/hyperparameter-optimization/ray-tune/ReadMe.md)
+    - [Population-Based Training](training/hyperparameter-optimization/population-based-training/ReadMe.md)
 
 
 ## Serving
