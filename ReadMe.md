@@ -219,7 +219,7 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - [Visual Question Answering](modeling/vlms/tasks/visual-question-answering/ReadMe.md)
         - [Document Understanding](modeling/vlms/tasks/document-understanding/ReadMe.md)
         - [OCR](modeling/vlms/tasks/ocr/ReadMe.md)
-- NLP
+- [NLP](modeling/nlp/ReadMe.md)
     - [Text Classification](modeling/nlp/text-classification/ReadMe.md)
         - [Sentiment Analysis](modeling/nlp/text-classification/sentiment-analysis/ReadMe.md)
         - [Intent Classification](modeling/nlp/text-classification/intent-classification/ReadMe.md)
@@ -245,19 +245,19 @@ After years of trying to organize my learning in notebooks, flashcards and my in
     - [Machine Translation](modeling/nlp/machine-translation/ReadMe.md)
         - [Sequence-to-Sequence](modeling/nlp/machine-translation/sequence-to-sequence/ReadMe.md)
         - [Transformer Models](modeling/nlp/machine-translation/transformer-models/ReadMe.md)
-- Tabular
-    - Gradient Boosting
-        - XGBoost
-        - LightGBM
-        - CatBoost
-    - Neural Networks for Tabular
-        - TabNet
-        - TabTransformer
-        - FT-Transformer
-    - Feature Engineering
-        - Encoding Categorical Variables
-        - Feature Scaling
-        - Feature Selection
+- [Tabular](modeling/tabular/ReadMe.md)
+    - [Gradient Boosting](modeling/tabular/gradient-boosting/ReadMe.md)
+        - [XGBoost](modeling/tabular/gradient-boosting/xgboost/ReadMe.md)
+        - [LightGBM](modeling/tabular/gradient-boosting/lightgbm/ReadMe.md)
+        - [CatBoost](modeling/tabular/gradient-boosting/catboost/ReadMe.md)
+    - [Neural Networks for Tabular](modeling/tabular/neural-networks-for-tabular/ReadMe.md)
+        - [TabNet](modeling/tabular/neural-networks-for-tabular/tabnet/ReadMe.md)
+        - [TabTransformer](modeling/tabular/neural-networks-for-tabular/tabtransformer/ReadMe.md)
+        - [FT-Transformer](modeling/tabular/neural-networks-for-tabular/ft-transformer/ReadMe.md)
+    - [Feature Engineering](modeling/tabular/feature-engineering/ReadMe.md)
+        - [Encoding Categorical Variables](modeling/tabular/feature-engineering/encoding-categorical-variables/ReadMe.md)
+        - [Feature Scaling](modeling/tabular/feature-engineering/feature-scaling/ReadMe.md)
+        - [Feature Selection](modeling/tabular/feature-engineering/feature-selection/ReadMe.md)
     - AutoML
         - AutoGluon
         - H2O
