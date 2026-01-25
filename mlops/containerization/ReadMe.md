@@ -307,3 +307,60 @@ containerd/nerdctl:
 - Lighter weight than full Docker
 
 For most ML teams, Docker provides the best ecosystem support and tooling.
+
+## Chapter Overview
+
+### [Docker](docker/ReadMe.md)
+
+Core Docker concepts and ML-specific practices:
+- Dockerfile best practices for ML
+- GPU container support
+- Building and running containers
+- Docker Compose for development
+
+### [Container Registries](container-registries/ReadMe.md)
+
+Storing and distributing ML container images:
+- Cloud provider registries (ECR, GCR, ACR)
+- Self-hosted options (Harbor, GitLab)
+- Image security and vulnerability scanning
+- Tagging strategies and lifecycle management
+
+### [Multi-Stage Builds](multi-stage-builds/ReadMe.md)
+
+Optimizing image size for ML workloads:
+- Separating build and runtime environments
+- PyTorch and TensorFlow optimization patterns
+- Caching strategies for large dependencies
+
+### [OCI Standards](oci-standards/ReadMe.md)
+
+Understanding container standards:
+- OCI Image, Runtime, and Distribution specifications
+- Content-addressable storage and digests
+- OCI artifacts for ML models
+- Tool interoperability
+
+### [Container Runtimes](container-runtimes/ReadMe.md)
+
+How containers actually execute:
+- High-level runtimes (containerd, CRI-O)
+- Low-level runtimes (runc, crun)
+- GPU runtimes (NVIDIA Container Toolkit)
+- Specialized runtimes (gVisor, Kata)
+
+### [Image Layers and Union Filesystems](image-layers-and-union-filesystems/ReadMe.md)
+
+Understanding container image internals:
+- How layers work and why they matter
+- Union filesystem mechanics (OverlayFS)
+- Layer optimization strategies for ML
+- Build cache management
+
+### [Container Networking](container-networking/ReadMe.md)
+
+Networking for containerized ML services:
+- Docker network types (bridge, host, overlay)
+- Service discovery and DNS
+- Performance optimization for distributed training
+- Kubernetes CNI integration

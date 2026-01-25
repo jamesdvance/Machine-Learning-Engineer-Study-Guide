@@ -300,13 +300,13 @@ After years of trying to organize my learning in notebooks, flashcards and my in
     - Alerting
         - PagerDuty
         - Opsgenie
-- Frameworks
-    - Kubeflow
-    - Metaflow
-    - MLflow
-    - Weights & Biases
-    - ZenML
-    - Kedro
+- [Frameworks](mlops/frameworks/ReadMe.md)
+    - [Kubeflow](mlops/frameworks/kubeflow/ReadMe.md)
+    - [Metaflow](mlops/frameworks/metaflow/ReadMe.md)
+    - [MLflow](mlops/frameworks/mlflow/ReadMe.md)
+    - [Weights & Biases](mlops/frameworks/weights-and-biases/ReadMe.md)
+    - [ZenML](mlops/frameworks/zenml/ReadMe.md)
+    - [Kedro](mlops/frameworks/kedro/ReadMe.md)
 - Orchestration
     - Argo
     - Airflow
@@ -327,30 +327,34 @@ After years of trying to organize my learning in notebooks, flashcards and my in
     - Feature Platforms
         - Tecton
         - Feast
-- CI/CD for ML
-    - Model Versioning
-    - Experiment Tracking
-    - Model Registry
-    - Automated Testing
-        - Data Validation
-        - Model Validation
-        - Integration Testing
-    - GitHub Actions
-    - GitLab CI
-- Infrastructure as Code
-    - Terraform
-    - Pulumi
-    - CloudFormation
-- Containerization
-    - Docker
-    - Container Registries
-    - Multi-Stage Builds
-- Kubernetes
-    - Deployments
-    - Services
-    - ConfigMaps and Secrets
-    - Horizontal Pod Autoscaler
-    - GPU Scheduling
+- [CI/CD for ML](mlops/ci-cd-for-ml/ReadMe.md)
+    - [Model Versioning](mlops/ci-cd-for-ml/model-versioning/ReadMe.md)
+    - [Experiment Tracking](mlops/ci-cd-for-ml/experiment-tracking/ReadMe.md)
+    - [Model Registry](mlops/ci-cd-for-ml/model-registry/ReadMe.md)
+    - [Automated Testing](mlops/ci-cd-for-ml/automated-testing/ReadMe.md)
+        - [Data Validation](mlops/ci-cd-for-ml/automated-testing/data-validation/ReadMe.md)
+        - [Model Validation](mlops/ci-cd-for-ml/automated-testing/model-validation/ReadMe.md)
+        - [Integration Testing](mlops/ci-cd-for-ml/automated-testing/integration-testing/ReadMe.md)
+    - [GitHub Actions](mlops/ci-cd-for-ml/github-actions/ReadMe.md)
+    - [GitLab CI](mlops/ci-cd-for-ml/gitlab-ci/ReadMe.md)
+- [Infrastructure as Code](mlops/infrastructure-as-code/ReadMe.md)
+    - [Terraform](mlops/infrastructure-as-code/terraform/ReadMe.md)
+    - [Pulumi](mlops/infrastructure-as-code/pulumi/ReadMe.md)
+    - [CloudFormation](mlops/infrastructure-as-code/cloudformation/ReadMe.md)
+- [Containerization](mlops/containerization/ReadMe.md)
+    - [Docker](mlops/containerization/docker/ReadMe.md)
+    - [Container Registries](mlops/containerization/container-registries/ReadMe.md)
+    - [Multi-Stage Builds](mlops/containerization/multi-stage-builds/ReadMe.md)
+    - [OCI Standards](mlops/containerization/oci-standards/ReadMe.md)
+    - [Container Runtimes](mlops/containerization/container-runtimes/ReadMe.md)
+    - [Image Layers and Union Filesystems](mlops/containerization/image-layers-and-union-filesystems/ReadMe.md)
+    - [Container Networking](mlops/containerization/container-networking/ReadMe.md)
+- [Kubernetes](mlops/kubernetes/ReadMe.md)
+    - [Deployments](mlops/kubernetes/deployments/ReadMe.md)
+    - [Services](mlops/kubernetes/services/ReadMe.md)
+    - [ConfigMaps and Secrets](mlops/kubernetes/configmaps-and-secrets/ReadMe.md)
+    - [Horizontal Pod Autoscaler](mlops/kubernetes/horizontal-pod-autoscaler/ReadMe.md)
+    - [GPU Scheduling](mlops/kubernetes/gpu-scheduling/ReadMe.md)
 - LLMOps
     - Evaluations
         - Frameworks
