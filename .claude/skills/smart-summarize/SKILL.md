@@ -19,6 +19,11 @@ With that framing in mind, also consider the other topics in the same directory 
 
 The focus should be on practical knowledge for usage and decision-making. Avoid historical information unless is is helpful in understanding the concept or making decisions. 
 
+## Engineering Blogs
+You must search engineering.fyi for the topic and use relevant articles. If an article is used from engineering.fyi you must add it to the resources tab for the topic. Note, you can search via url by using 
+`https://engineering.fyi/search?q=<topic>`
+Spaces are filled with the & symbol. 
+
 ## Fact-Finding
 Using your ingrained knowledge is fine for most use cases. However, before you start, check the chapter's directory. There may or may not be a 'Resources.md' or 'resources.md' file there. If there is, read this file line by line. For each line, check if the line is a full url or a phrase. If a full URL, use the WebFetch tool and read the content. If a phrase, use the WebSearch  tool and read the first non-sponsered link, then use WebFetch to read its content. If you are unsure of necessary details, use the WebSearch tool on your own, but ensure you append your search phrase to the Resources.md in the same directory (create one if necessary). 
 

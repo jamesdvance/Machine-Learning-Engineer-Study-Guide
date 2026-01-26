@@ -1,0 +1,1 @@
+https://openai.com/index/scaling-postgresql/?utm_source=engineering.fyi
