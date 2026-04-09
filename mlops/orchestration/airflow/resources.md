@@ -1,0 +1,9 @@
+https://airflow.apache.org/docs/
+https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html
+https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/taskflow.html
+https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/operators.html
+https://airflow.apache.org/docs/helm-chart/stable/index.html
+https://docs.astronomer.io/
+https://docs.aws.amazon.com/mwaa/
+https://cloud.google.com/composer/docs
+https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html

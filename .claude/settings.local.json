@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:engineering.fyi)",
+      "WebFetch(domain:auto.gluon.ai)",
+      "WebFetch(domain:docs.h2o.ai)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:microsoft.github.io)",
+      "WebFetch(domain:www.microsoft.com)",
+      "Bash(find:*)",
+      "WebFetch(domain:www.engineering.fyi)",
+      "WebFetch(domain:docs.cleanrl.dev)",
+      "WebFetch(domain:stable-baselines3.readthedocs.io)",
+      "Bash(echo \"EXIT:$?\")",
+      "WebFetch(domain:docs.evidentlyai.com)",
+      "WebFetch(domain:response.pagerduty.com)",
+      "WebFetch(domain:www.evidentlyai.com)",
+      "WebFetch(domain:neptune.ai)",
+      "WebFetch(domain:www.pagerduty.com)",
+      "WebFetch(domain:scikit-multiflow.readthedocs.io)",
+      "WebFetch(domain:riverml.xyz)",
+      "WebFetch(domain:arize.com)",
+      "WebFetch(domain:www.datacamp.com)",
+      "WebFetch(domain:docs.prefect.io)",
+      "WebFetch(domain:docs.dagster.io)",
+      "WebFetch(domain:docs.databricks.com)"
+    ]
+  }
+}

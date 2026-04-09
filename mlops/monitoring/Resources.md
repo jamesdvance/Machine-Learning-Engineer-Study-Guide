@@ -1,0 +1,17 @@
+# Resources
+
+- [Prometheus Official Documentation](https://prometheus.io/docs/introduction/overview/)
+- [Grafana Official Documentation](https://grafana.com/docs/grafana/latest/)
+- [Google SRE Book - Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/)
+- [Google SRE Book - Service Level Objectives](https://sre.google/sre-book/service-level-objectives/)
+- [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
+- [Evidently AI - ML Monitoring](https://www.evidentlyai.com/ml-in-production/ml-monitoring)
+- [How BasisAI Uses Grafana and Prometheus to Monitor Model Drift - Grafana Labs](https://grafana.com/blog/2021/08/02/how-basisai-uses-grafana-and-prometheus-to-monitor-model-drift-in-machine-learning-workloads/)
+- [Monitoring Machine Learning Models in Production with Grafana and ClearML - Grafana Labs](https://grafana.com/blog/2023/08/18/monitoring-machine-learning-models-in-production-with-grafana-and-clearml/)
+- [Real-Time ML Monitoring: Building Live Dashboards with Evidently and Grafana - Evidently AI](https://www.evidentlyai.com/blog/evidently-and-grafana-ml-monitoring-live-dashboards)
+- [PagerDuty Incident Response Documentation](https://response.pagerduty.com/)
+- [Opsgenie Documentation - Alert and Incident Management](https://support.atlassian.com/opsgenie/)
+- [Made With ML - Monitoring](https://madewithml.com/courses/mlops/monitoring/)
+- [Prometheus Alertmanager Documentation](https://prometheus.io/docs/alerting/latest/alertmanager/)
+- [Grafana Mimir - Scalable Long-Term Storage for Prometheus](https://grafana.com/docs/mimir/latest/)
+- [Thanos - Highly Available Prometheus](https://thanos.io/tip/thanos/getting-started.md/)

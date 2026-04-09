@@ -1,0 +1,17 @@
+# Resources
+
+- [Prometheus Official Documentation](https://prometheus.io/docs/introduction/overview/)
+- [Prometheus Querying Basics (PromQL)](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+- [Prometheus Metric Types](https://prometheus.io/docs/concepts/metric_types/)
+- [Prometheus Best Practices - Naming](https://prometheus.io/docs/practices/naming/)
+- [Prometheus Best Practices - Histograms and Summaries](https://prometheus.io/docs/practices/histograms/)
+- [Prometheus Configuration - Service Discovery](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubernetes_sd_config)
+- [Prometheus Federation](https://prometheus.io/docs/prometheus/latest/federation/)
+- [Prometheus Recording Rules](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/)
+- [Alertmanager Documentation](https://prometheus.io/docs/alerting/latest/alertmanager/)
+- [prometheus_client Python Library](https://github.com/prometheus/client_python)
+- [NVIDIA DCGM Exporter for GPU Metrics](https://github.com/NVIDIA/dcgm-exporter)
+- [Grafana Prometheus Data Source](https://grafana.com/docs/grafana/latest/datasources/prometheus/)
+- [Thanos - Highly Available Prometheus](https://thanos.io/tip/thanos/getting-started.md/)
+- [Grafana Mimir - Scalable Long-Term Storage for Prometheus](https://grafana.com/docs/mimir/latest/)
+- [OpenTelemetry and Prometheus Compatibility](https://opentelemetry.io/docs/specs/otel/compatibility/prometheus_and_openmetrics/)

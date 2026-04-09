@@ -258,48 +258,48 @@ After years of trying to organize my learning in notebooks, flashcards and my in
         - [Encoding Categorical Variables](modeling/tabular/feature-engineering/encoding-categorical-variables/ReadMe.md)
         - [Feature Scaling](modeling/tabular/feature-engineering/feature-scaling/ReadMe.md)
         - [Feature Selection](modeling/tabular/feature-engineering/feature-selection/ReadMe.md)
-    - AutoML
-        - AutoGluon
-        - H2O
-        - FLAML
-- Reinforcement Learning
-    - Concepts
-        - Markov Decision Processes
-        - Bellman Equations
-        - Exploration vs Exploitation
-    - Value-Based Methods
-        - Q-Learning
-        - DQN
-        - Double DQN
-        - Dueling DQN
-    - Policy-Based Methods
-        - REINFORCE
-        - Actor-Critic
-        - A2C/A3C
-        - PPO
-        - TRPO
-    - Model-Based RL
-        - World Models
-        - MuZero
-    - Multi-Agent RL
-    - Inverse Reinforcement Learning
-    - Frameworks
-        - Stable Baselines3
-        - RLlib
-        - CleanRL
+    - [AutoML](modeling/tabular/automl/ReadMe.md)
+        - [AutoGluon](modeling/tabular/automl/autogluon/ReadMe.md)
+        - [H2O](modeling/tabular/automl/h2o/ReadMe.md)
+        - [FLAML](modeling/tabular/automl/flaml/ReadMe.md)
+- [Reinforcement Learning](modeling/reinforcement-learning/ReadMe.md)
+    - [Concepts](modeling/reinforcement-learning/concepts/ReadMe.md)
+        - [Markov Decision Processes](modeling/reinforcement-learning/concepts/markov-decision-processes/ReadMe.md)
+        - [Bellman Equations](modeling/reinforcement-learning/concepts/bellman-equations/ReadMe.md)
+        - [Exploration vs Exploitation](modeling/reinforcement-learning/concepts/exploration-vs-exploitation/ReadMe.md)
+    - [Value-Based Methods](modeling/reinforcement-learning/value-based-methods/ReadMe.md)
+        - [Q-Learning](modeling/reinforcement-learning/value-based-methods/q-learning/ReadMe.md)
+        - [DQN](modeling/reinforcement-learning/value-based-methods/dqn/ReadMe.md)
+        - [Double DQN](modeling/reinforcement-learning/value-based-methods/double-dqn/ReadMe.md)
+        - [Dueling DQN](modeling/reinforcement-learning/value-based-methods/dueling-dqn/ReadMe.md)
+    - [Policy-Based Methods](modeling/reinforcement-learning/policy-based-methods/ReadMe.md)
+        - [REINFORCE](modeling/reinforcement-learning/policy-based-methods/reinforce/ReadMe.md)
+        - [Actor-Critic](modeling/reinforcement-learning/policy-based-methods/actor-critic/ReadMe.md)
+        - [A2C/A3C](modeling/reinforcement-learning/policy-based-methods/a2c-a3c/ReadMe.md)
+        - [PPO](modeling/reinforcement-learning/policy-based-methods/ppo/ReadMe.md)
+        - [TRPO](modeling/reinforcement-learning/policy-based-methods/trpo/ReadMe.md)
+    - [Model-Based RL](modeling/reinforcement-learning/model-based-rl/ReadMe.md)
+        - [World Models](modeling/reinforcement-learning/model-based-rl/world-models/ReadMe.md)
+        - [MuZero](modeling/reinforcement-learning/model-based-rl/muzero/ReadMe.md)
+    - [Multi-Agent RL](modeling/reinforcement-learning/multi-agent-rl/ReadMe.md)
+    - [Inverse Reinforcement Learning](modeling/reinforcement-learning/inverse-reinforcement-learning/ReadMe.md)
+    - [Frameworks](modeling/reinforcement-learning/frameworks/ReadMe.md)
+        - [Stable Baselines3](modeling/reinforcement-learning/frameworks/stable-baselines3/ReadMe.md)
+        - [RLlib](modeling/reinforcement-learning/frameworks/rllib/ReadMe.md)
+        - [CleanRL](modeling/reinforcement-learning/frameworks/cleanrl/ReadMe.md)
     
 
 ## MLOps
-- Monitoring
-    - Prometheus
-    - Grafana
-    - Model Monitoring
-        - Data Drift Detection
-        - Concept Drift
-        - Performance Degradation
-    - Alerting
-        - PagerDuty
-        - Opsgenie
+- [Monitoring](mlops/monitoring/ReadMe.md)
+    - [Prometheus](mlops/monitoring/prometheus/ReadMe.md)
+    - [Grafana](mlops/monitoring/grafana/ReadMe.md)
+    - [Model Monitoring](mlops/monitoring/model-monitoring/ReadMe.md)
+        - [Data Drift Detection](mlops/monitoring/model-monitoring/data-drift-detection/ReadMe.md)
+        - [Concept Drift](mlops/monitoring/model-monitoring/concept-drift/ReadMe.md)
+        - [Performance Degradation](mlops/monitoring/model-monitoring/performance-degradation/ReadMe.md)
+    - [Alerting](mlops/monitoring/alerting/ReadMe.md)
+        - [PagerDuty](mlops/monitoring/alerting/pagerduty/ReadMe.md)
+        - [Opsgenie](mlops/monitoring/alerting/opsgenie/ReadMe.md)
 - [Frameworks](mlops/frameworks/ReadMe.md)
     - [Kubeflow](mlops/frameworks/kubeflow/ReadMe.md)
     - [Metaflow](mlops/frameworks/metaflow/ReadMe.md)
@@ -307,16 +307,16 @@ After years of trying to organize my learning in notebooks, flashcards and my in
     - [Weights & Biases](mlops/frameworks/weights-and-biases/ReadMe.md)
     - [ZenML](mlops/frameworks/zenml/ReadMe.md)
     - [Kedro](mlops/frameworks/kedro/ReadMe.md)
-- Orchestration
-    - Argo
-    - Airflow
-    - Prefect
-    - Dagster
-- PaaS
-    - AWS SageMaker
-    - Google Vertex AI
-    - Azure ML
-    - Databricks
+- [Orchestration](mlops/orchestration/ReadMe.md)
+    - [Argo](mlops/orchestration/argo/ReadMe.md)
+    - [Airflow](mlops/orchestration/airflow/ReadMe.md)
+    - [Prefect](mlops/orchestration/prefect/ReadMe.md)
+    - [Dagster](mlops/orchestration/dagster/ReadMe.md)
+- [PaaS](mlops/paas/ReadMe.md)
+    - [AWS SageMaker](mlops/paas/aws-sagemaker/ReadMe.md)
+    - [Google Vertex AI](mlops/paas/google-vertex-ai/ReadMe.md)
+    - [Azure ML](mlops/paas/azure-ml/ReadMe.md)
+    - [Databricks](mlops/paas/databricks/ReadMe.md)
 - Platforms
     - Self-Hosted
         - MLflow
