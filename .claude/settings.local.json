@@ -24,7 +24,9 @@
       "WebFetch(domain:www.datacamp.com)",
       "WebFetch(domain:docs.prefect.io)",
       "WebFetch(domain:docs.dagster.io)",
-      "WebFetch(domain:docs.databricks.com)"
+      "WebFetch(domain:docs.databricks.com)",
+      "WebFetch(domain:leetcode.com)",
+      "Bash(curl:*)"
     ]
   }
 }
